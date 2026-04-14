@@ -14,6 +14,67 @@ grep "^## \[" wiki/log.md | head -10
 
 ---
 
+## [2026-04-14] ingest | Email Marketing Squeeze and Scale — Lemlist Case Study (Spicy Lemon)
+
+- Summary page: [[sources/squeezeandscale-lemlist-email-nurturing]]
+- Raw source: `raw/sources/Email marketing Squeeze and scale.md`
+- Language: French podcast transcript
+- Pages created:
+  - [[sources/squeezeandscale-lemlist-email-nurturing]]
+  - [[concepts/behavioral-email-triggers]]
+  - [[entities/customer-io]]
+  - [[entities/spicy-lemon]]
+- Pages updated:
+  - [[entities/lemlist]] (major update: added Lemlist as SaaS case study, not just outreach tool; key stats; internal stack)
+  - [[concepts/data-warehouse-for-ai]] (added Lemlist's BigQuery implementation; real-world confirmation of the pattern)
+  - [[wiki/index.md]], [[wiki/overview.md]]
+- Key takeaway: Timing and relevance beat copy quality. The shift from temporal flows (J+2 after signup) to behavioral triggers (action-based, dynamically routed) produced +800 demos/6 months, +4pts conversion, -40% churn at Lemlist. The highest-ROI single intervention: pre-filling booking forms with known data → +120–130% demos from the same lead volume, with zero dev work.
+
+---
+
+## [2026-04-14] ingest | SalesCaptain's LinkedIn Outbound Playbook 2026 (Bill Stathopoulos)
+
+- Summary page: [[sources/salescaptain-linkedin-outbound-playbook]]
+- Raw source: `raw/sources/SalesCaptain's LinkedIn Outbound Playbook 2026.pdf`
+- Pages created:
+  - [[sources/salescaptain-linkedin-outbound-playbook]]
+  - [[entities/heyreach]]
+  - [[entities/lemlist]]
+  - [[entities/trigify]]
+  - [[entities/teamfluence]]
+  - [[entities/fibbler]]
+  - [[entities/rb2b]]
+  - [[entities/findymail]]
+  - [[entities/zerobounce]]
+  - [[concepts/content-outbound-flywheel]]
+- Pages updated:
+  - [[concepts/signal-infrastructure]] (added 7 LinkedIn-specific workflows, LinkedIn signal types, critical signal rule)
+  - [[concepts/enrichment-waterfall]] (added specific coverage numbers: 50–60% → 85%+, ZeroBounce validation step)
+  - [[entities/bill-stathopoulos]] (added LinkedIn playbook claims)
+  - [[entities/salescaptain]] (added stats: $1M+ pipeline, 22+ meetings/month, 79% ICP fit)
+  - [[wiki/index.md]], [[wiki/overview.md]]
+- Key takeaway: LinkedIn's real power is content + outbound as a flywheel, not either alone. 8 data-backed DM principles from 120K+ DMs. The critical signal rule: use signals for targeting, never in the message copy.
+
+---
+
+## [2026-04-14] ingest | SalesCaptain's Claude Code for GTM Playbook (Bill Stathopoulos)
+
+- Summary page: [[sources/salescaptain-claude-code-gtm-playbook]]
+- Raw source: `raw/sources/SalesCaptain's Claude Code for GTM playbook.pdf`
+- Pages created:
+  - [[sources/salescaptain-claude-code-gtm-playbook]]
+  - [[entities/bill-stathopoulos]]
+  - [[entities/salescaptain]]
+  - [[concepts/icp-avatar]]
+- Pages updated:
+  - [[concepts/gtm-engineering]] (added SalesCaptain's 4 operating modes, 12 playbooks, 8-step pipeline, CLAUDE.md insight)
+  - [[concepts/hybrid-ai-model]] (added three-column framework, lead scoring Python rule)
+  - [[entities/clay]] (added SalesCaptain's Clay vs. Claude Code by GTM stage, role in 7 LinkedIn workflows)
+  - [[wiki/index.md]], [[wiki/overview.md]]
+- Key takeaway: CLAUDE.md is the critical enabler — without it Claude is a chatbot, with it it's a GTM engine. The ICP Avatar's 3-level pain hierarchy (surface → operational → identity-level) is the most novel framework in the source: every phrase must come from exact customer quotes.
+
+---
+
 ## [2026-04-14] ingest | The GTM Engineering Hire (@itsalexvacca / ColdIQ)
 
 - Summary page: [[sources/alexvacca-gtm-engineering-hire]]

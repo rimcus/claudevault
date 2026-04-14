@@ -4,7 +4,7 @@ type: concept
 tags: [data, infrastructure, ai-agents, gtm, decision-making]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [codyschneider-gtm-agents]
+sources: [codyschneider-gtm-agents, squeezeandscale-lemlist-email-nurturing]
 ---
 
 # Data Warehouse for AI
@@ -38,14 +38,23 @@ The warehouse is the bridge between scattered business data and agent intelligen
 - **Open-source options** make this accessible without enterprise tooling
 - **Queryable by LLM** — agents can write SQL or use structured APIs to retrieve context
 
+## Real-World Implementation (Lemlist)
+
+[[Lemlist]]'s email marketing stack provides a concrete implementation: **BigQuery** (or "Wind Data Warehouse") nourished directly by product events. The data team creates pre-processed tables (user email + behavior metrics) for the marketing team to use without writing raw queries. These tables feed [[Customer.io]] with daily syncs, powering dynamic behavioral segments.
+
+This confirms the warehouse as a **product-adjacent infrastructure layer** — it's not just for outbound GTM, but for the entire SaaS lifecycle (activation, retention, expansion, advocacy).
+
 ## Contradictions & Open Questions
 
-- What open-source warehouse tools are specifically recommended? Schneider doesn't name one. Candidates: DuckDB, ClickHouse, PostgreSQL. [low confidence]
-- How does the warehouse stay in sync in real time vs. batch? Not addressed in source.
+- What open-source warehouse tools are specifically recommended? Schneider doesn't name one. Lemlist uses BigQuery (Google Cloud). Candidates for open-source: DuckDB, ClickHouse, PostgreSQL. [low confidence]
+- How does the warehouse stay in sync in real time vs. batch? Lemlist does daily batch syncs into Customer.io — real-time not required for lifecycle email.
 
 ## See Also
 
 - [[AI Marketing Stack]] — the broader infrastructure context
 - [[GTM Agents]] — the agents that query this warehouse
-- [[Cody Schneider]] — identified this as the critical enabling layer
-- [[sources/codyschneider-gtm-agents]] — source
+- [[Behavioral Email Triggers]] — the lifecycle email system the warehouse enables internally
+- [[Cody Schneider]] — identified this as the critical enabling layer for outbound GTM agents
+- [[Lemlist]] — real-world implementation: BigQuery → Customer.io → behavioral flows
+- [[sources/codyschneider-gtm-agents]] — Schneider's framework
+- [[sources/squeezeandscale-lemlist-email-nurturing]] — Lemlist's concrete implementation

@@ -4,7 +4,7 @@ type: concept
 tags: [gtm, engineering, automation, pipelines, growth]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [codyschneider-gtm-agents, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, alexvacca-gtm-engineering-hire]
+sources: [codyschneider-gtm-agents, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, alexvacca-gtm-engineering-hire, salescaptain-claude-code-gtm-playbook, salescaptain-linkedin-outbound-playbook]
 ---
 
 # GTM Engineering
@@ -57,6 +57,30 @@ One person across all four pillars matches or exceeds a 3-person SDR pod for SMB
 
 Every pipeline is a loop. The data generated in step 4 informs step 1 of the next cycle — this is [[Knowledge Compounding]] applied to marketing.
 
+## SalesCaptain's Implementation Layer
+
+[[Bill Stathopoulos]] / [[SalesCaptain]] adds a third practitioner voice — specifically how non-technical GTM teams use Claude Code to run the full engineering stack:
+
+**The 4 Operating Modes:**
+
+| Mode | When to use |
+|------|-------------|
+| Plan Mode | Before any new workflow — Claude plans, touches nothing |
+| Auto-Accept Edits | After reviewing and approving the plan |
+| Auto Mode | Workflows you've tested and trust completely |
+| Skip Permissions | Isolated test environments ONLY — never on live data |
+
+**The 12 Playbooks Every GTM Team Should Build:**
+- Foundation: ICP Profile, Brand Voice, Segment-to-Message Mapper
+- Prospecting: Lead Scorer (Python rules, not AI), Outreach Writer
+- Conversion: Offer Testing, Email Frameworks, Objection Handler, Copy Stress-Test
+- Intelligence: Social Proof Matcher, Meeting Prep, Call Debrief
+
+**The CLAUDE.md Insight:** Without a CLAUDE.md, Claude Code is a chatbot. With one, it becomes a GTM engine that knows your business. The CLAUDE.md is the GTM implementation of [[Schema-Governed LLM Behavior]].
+
+**8-Step Outbound Pipeline (SalesCaptain):**
+1. Detect signals → 2. Score and tier (Python) → 3. Score fit fast (reject pre-enrichment) → 4. Find decision-makers → 5. Enrich contacts (waterfall) → 6. Generate copy → 7. Push campaign → 8. Analyse and improve
+
 ## Key Practical Constraint: The Cold Email Personalization Problem
 
 Surfaced by community (Dhruv Jain) and **confirmed by ColdIQ's empirical data**: full AI autonomy erodes pipeline quality within a quarter. Personalization feels generic, signal-to-noise degrades, strategic judgment stops happening. The [[Hybrid AI Model]] is the evidence-backed mitigation.
@@ -68,8 +92,11 @@ Surfaced by community (Dhruv Jain) and **confirmed by ColdIQ's empirical data**:
 - [[Signal Infrastructure]] — the upstream data layer that separates good GTM engineering from bad
 - [[Enrichment Waterfall]] — the targeting layer technique
 - [[Hybrid AI Model]] — the empirically validated AI integration approach
+- [[Content Outbound Flywheel]] — LinkedIn-specific GTM engineering implementation
+- [[ICP Avatar]] — the 3-level pain hierarchy; prerequisite for good GTM engineering copy
 - [[AI UGC Ads]] — one output type from GTM engineering
 - [[Growth Loop]] — the optimization pattern
 - [[Cold Email Personalization Problem]] — the key current constraint
 - [[Cody Schneider]] — builder/tools perspective
 - [[Alex Vacca]] / [[ColdIQ]] — role definition + empirical data
+- [[Bill Stathopoulos]] / [[SalesCaptain]] — Claude Code implementation layer

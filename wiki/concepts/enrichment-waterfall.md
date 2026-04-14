@@ -4,7 +4,7 @@ type: concept
 tags: [gtm, data, enrichment, targeting, clay]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [alexvacca-gtm-engineering-hire]
+sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook]
 ---
 
 # Enrichment Waterfall
@@ -41,9 +41,29 @@ Vacca's specific claim: campaigns built with 8–12 data points per prospect sig
 - [[FullEnrich]] — enrichment provider
 - [[Apollo]] — also used for enrichment (from Schneider's stack)
 
+## SalesCaptain's Specific Waterfall (Coverage Numbers)
+
+[[Bill Stathopoulos]] gives specific coverage numbers for a 4-step waterfall targeting email addresses:
+
+| Step | Provider | Estimated Coverage |
+|------|---------|-------------------|
+| 1st pass | [[Findymail]] or Prospeo | ~50–60% |
+| 2nd pass | LeadMagic or FullEnrich | fills gaps → ~70–80% [low confidence] |
+| 3rd pass | Hunter or [[Apollo]] | final gaps → 85%+ |
+| Validation | [[ZeroBounce]] | clean before sending — remove invalid/risky |
+
+**Starting coverage:** ~50% (single-provider baseline)
+**After waterfall:** 85%+ — a ~35 percentage-point lift from the cascaded approach.
+
+The validation step is distinct from enrichment: ZeroBounce doesn't find emails, it removes bad ones. Both steps are required for clean deliverability.
+
 ## See Also
 
 - [[Signal Infrastructure]] — the upstream layer that feeds the waterfall
 - [[GTM Engineering]] — the practice that uses enrichment waterfalls
 - [[Clay]] — where waterfalls are built
-- [[sources/alexvacca-gtm-engineering-hire]] — source
+- [[Findymail]] — 1st-pass email enrichment provider
+- [[ZeroBounce]] — validation layer (final step)
+- [[Apollo]] — 3rd-pass enrichment provider
+- [[sources/alexvacca-gtm-engineering-hire]] — Vacca's framework (8–12 data points)
+- [[sources/salescaptain-linkedin-outbound-playbook]] — SalesCaptain's waterfall with coverage numbers

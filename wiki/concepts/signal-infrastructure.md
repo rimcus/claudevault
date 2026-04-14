@@ -4,7 +4,7 @@ type: concept
 tags: [gtm, data, signals, intent, infrastructure, targeting]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [alexvacca-gtm-engineering-hire]
+sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook]
 ---
 
 # Signal Infrastructure
@@ -26,7 +26,27 @@ This is the [[Knowledge Compounding]] principle applied to GTM: the signal layer
 | Funding events | Recent funding round = budget + growth mode | |
 | Technology installs | Installed a competitor or complementary tool | |
 | Website visits | Anonymous visitor identification from your own site | [[RB2B]] |
-| Content engagement | Liked a LinkedIn post, read an article | [[Common Room]] |
+| Content engagement | Liked a LinkedIn post, read an article | [[Common Room]], [[Trigify]] |
+| Ad engagement | Engaged with your LinkedIn ad but never clicked | [[Fibbler]] |
+| Profile views | Checked your LinkedIn profile before acting | [[Teamfluence]] |
+| LinkedIn follows | Followed your company page | LinkedIn export |
+| Competitor follows | Follows a competitor's LinkedIn page | LinkedIn + [[Clay]] |
+
+## LinkedIn-Specific Signal Workflows (SalesCaptain)
+
+[[Bill Stathopoulos]] maps 7 concrete signal-triggered workflows for LinkedIn, each with a named signal, motion, and toolchain:
+
+| # | Signal | Trigger | Tools |
+|---|--------|---------|-------|
+| 01 | Ad Engagers | Engaged with LinkedIn ad, no click | Fibbler/ZenABM → Clay → HeyReach |
+| 02 | Content Engagers | 3+ engagements with your posts | Trigify → Clay → HeyReach |
+| 03 | Event Attendees | Attended LinkedIn event in your space | Phantombuster → Clay → HeyReach |
+| 04 | Keyword Engagers | Posted/commented about your problem space | Trigify → Clay → HeyReach |
+| 05 | Page Followers | Followed your LinkedIn company page | LinkedIn export → Clay → Lemlist |
+| 06 | Competitor Followers | Follows a competitor | LinkedIn → Clay → HeyReach |
+| 07 | Decision Maker | Booked a meeting (pre-warm buying committee) | Calendly → Clay → HeyReach |
+
+**Critical rule:** The signal informs targeting — never the message. Never say "I saw you liked my post." Use the signal to select *who*; use the topic as natural context.
 
 ## Why Front-Loading Matters
 
@@ -50,9 +70,15 @@ Signal infrastructure is what makes "the list" actually strategic. A static list
 
 ## See Also
 
-- [[sources/alexvacca-gtm-engineering-hire]] — primary source
+- [[sources/alexvacca-gtm-engineering-hire]] — primary source (intent/firmographic signals)
+- [[sources/salescaptain-linkedin-outbound-playbook]] — LinkedIn-specific signal map (7 workflows)
 - [[GTM Engineering]] — the practice signal infrastructure enables
+- [[Content Outbound Flywheel]] — the strategic system these signals feed
 - [[Enrichment Waterfall]] — what happens to a lead after the signal fires
 - [[Clay]] — where signal data is processed into enriched prospect records
-- [[Common Room]], [[Trigify]], [[RB2B]] — signal platforms
+- [[Trigify]] — LinkedIn engagement signal platform
+- [[Teamfluence]] — profile viewer tracking
+- [[Fibbler]] — LinkedIn ad engager detection
+- [[RB2B]] — website visitor deanonymization
+- [[Common Room]] — broader intent signal platform
 - [[Data Warehouse for AI]] — related concept from Schneider's stack

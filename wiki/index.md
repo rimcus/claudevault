@@ -8,7 +8,7 @@ updated: 2026-04-14
 
 *Content catalog. Updated on every ingest. Read this first when answering queries — find relevant pages, then drill in.*
 
-**Total pages:** 45 | **Sources ingested:** 6 | **Last updated:** 2026-04-14
+**Total pages:** 74 | **Sources ingested:** 9 | **Last updated:** 2026-04-14
 
 ---
 
@@ -22,6 +22,9 @@ One page per ingested source. Links to raw file in `raw/sources/`.
 - [[sources/codyschneider-twitter-outreach-pipeline|Twitter Engager → Cold Outreach Pipeline]] — Schneider's earlier pipeline: Twitter engagers → Exa AI → Apollo → Instantly; introduces "inbound content outbound cold" strategy (1 source)
 - [[sources/codyschneider-ai-ugc-ads|100+ AI UGC Ads for SaaS]] — Reddit pain points → Claude scripts → HeyGen video → FB Ads → CLV-optimized growth loop (1 source)
 - [[sources/alexvacca-gtm-engineering-hire|The GTM Engineering Hire]] — Alex Vacca / ColdIQ: the definitive role definition, 4 pillars, hiring criteria, and build phases — backed by 400+ B2B engagements and 23M+ cold emails (1 source)
+- [[sources/salescaptain-claude-code-gtm-playbook|Claude Code for GTM Playbook]] — Bill Stathopoulos / SalesCaptain: 12 playbooks, 8-step pipeline, ICP Avatar framework, CLAUDE.md as GTM engine; $50–150/month to run 2–4 campaigns (1 source)
+- [[sources/salescaptain-linkedin-outbound-playbook|LinkedIn Outbound Playbook 2026]] — Bill Stathopoulos / SalesCaptain: $1M+ pipeline, 7 signal-triggered workflows, 8 data-backed DM principles from 120K+ DMs, content + outbound flywheel (1 source)
+- [[sources/squeezeandscale-lemlist-email-nurturing|Email Marketing Data-Driven chez Lemlist]] — Squeeze and SCALE podcast (Spicy Lemon): Nicolas (Lemlist growth marketer) details the shift from temporal to behavioral email flows — 800+ demos, +4pts conversion, 600+ reviews, -40% churn (1 source, French)
 
 ---
 
@@ -42,9 +45,12 @@ Topic and idea pages.
 - [[concepts/ai-ugc-ads|AI UGC Ads]] — AI-generated UGC-style video ads at scale; 100+ variations per cycle, optimized for CLV
 - [[concepts/growth-loop|Growth Loop]] — self-reinforcing optimization cycle: run → measure CLV → remix winners → repeat
 - [[concepts/cold-email-personalization-problem|Cold Email Personalization Problem]] — confirmed by ColdIQ data: full AI autonomy erodes pipeline quality within one quarter; [[Hybrid AI Model]] is the mitigation
-- [[concepts/signal-infrastructure|Signal Infrastructure]] — the upstream data layer (intent signals, hiring triggers, funding events) that makes campaigns smart over time; the layer most companies skip
-- [[concepts/enrichment-waterfall|Enrichment Waterfall]] — multi-provider enrichment stacking to reach 8–12 data points per prospect before any email is sent
-- [[concepts/hybrid-ai-model|Hybrid AI Model]] — AI on volume work + humans on judgment; empirically validated by ColdIQ across 400+ clients
+- [[concepts/signal-infrastructure|Signal Infrastructure]] — the upstream data layer (intent signals, hiring triggers, funding events, LinkedIn engagement) that makes campaigns smart over time; includes 7 LinkedIn-specific signal workflows
+- [[concepts/enrichment-waterfall|Enrichment Waterfall]] — multi-provider enrichment stacking to reach 85%+ email coverage; specific providers and coverage numbers from SalesCaptain
+- [[concepts/hybrid-ai-model|Hybrid AI Model]] — AI on volume work + humans on judgment; empirically validated by ColdIQ; three-column framework from SalesCaptain
+- [[concepts/icp-avatar|ICP Avatar]] — 3-level pain hierarchy (surface → operational → identity-level); every phrase must come from exact customer quotes; the upstream fix for generic AI copy
+- [[concepts/content-outbound-flywheel|Content Outbound Flywheel]] — LinkedIn content pre-warms prospects before outreach; two buyer journeys reinforcing each other; 79% ICP fit on inbound
+- [[concepts/behavioral-email-triggers|Behavioral Email Triggers]] — triggering lifecycle emails on product actions rather than time-since-signup; the core architecture behind Lemlist's email marketing transformation
 
 ---
 
@@ -55,23 +61,35 @@ People, tools, organizations.
 ### People
 - [[entities/andrej-karpathy|Andrej Karpathy]] — AI researcher; originator of the LLM wiki pattern
 - [[entities/vannevar-bush|Vannevar Bush]] — engineer; proposed the Memex (1945)
-
-### People
 - [[entities/cody-schneider|Cody Schneider]] — growth practitioner; author of the GTM agents blueprint
 - [[entities/hridoy-rehman|Hridoy Rehman]] — builder; author of the SaaS lifecycle blueprint
+- [[entities/alex-vacca|Alex Vacca]] — co-founder of ColdIQ; author of the GTM Engineering Hire guide; the empirical voice on what actually works in outbound at scale
+- [[entities/bill-stathopoulos|Bill Stathopoulos]] — CEO & co-founder of SalesCaptain; author of Claude Code for GTM and LinkedIn Outbound playbooks
+
+### Organizations
+- [[entities/coldiq|ColdIQ]] — GTM agency, $7M+ ARR, 400+ B2B clients, 23M+ emails; the data source behind Vacca's claims
+- [[entities/salescaptain|SalesCaptain]] — GTM agency; $1M+ LinkedIn pipeline, 79% ICP fit; implementation-focused (Claude Code + LinkedIn workflows)
 
 ### Tools
 - [[entities/obsidian|Obsidian]] — the markdown vault app serving as the browsing interface ("the IDE") for this wiki
 - [[entities/qmd|qmd]] — optional local search engine for markdown (BM25/vector hybrid); for when the index isn't enough
 - [[entities/hermes-agent|Hermes Agent]] — AI agent framework used as the runtime in Schneider's GTM stack
 - [[entities/apify|Apify]] — web scraping platform; first step in the LinkedIn lead pipeline
-- [[entities/apollo|Apollo]] — B2B contact enrichment; email finding from LinkedIn profiles
+- [[entities/apollo|Apollo]] — B2B contact enrichment; email finding from LinkedIn profiles; 3rd-pass in enrichment waterfall
 - [[entities/instantly|Instantly]] — cold email platform; final step in the lead pipeline + inbox management
 - [[entities/graphed|Graphed]] — Cody Schneider's AI data analyst product; connects cold email + CRM + ads + Stripe for CLV analysis; closes the growth loop
 - [[entities/heygen|HeyGen]] — AI video generation API; produces UGC-style ad videos from Claude-written scripts
-- [[entities/alex-vacca|Alex Vacca]] — co-founder of ColdIQ; author of the GTM Engineering Hire guide; the empirical voice on what actually works in outbound at scale
-- [[entities/coldiq|ColdIQ]] — GTM agency, $7M+ ARR, 400+ B2B clients, 23M+ emails; the data source behind Vacca's claims
-- [[entities/clay|Clay]] — the central workflow-building tool for GTM engineers; enrichment waterfalls, signal processing, campaign orchestration
+- [[entities/clay|Clay]] — the central workflow-building tool for GTM engineers; enrichment waterfalls, signal processing, LinkedIn workflow orchestration
+- [[entities/heyreach|HeyReach]] — LinkedIn outreach platform; flat-fee unlimited profiles; execution layer in 5 of SalesCaptain's 7 workflows
+- [[entities/lemlist|Lemlist]] — multichannel outreach (email + LinkedIn + WhatsApp); alternative to HeyReach when multi-channel sequences needed
+- [[entities/trigify|Trigify]] — LinkedIn signal platform; detects post engagers, keyword activity, and profile interactions in real time
+- [[entities/teamfluence|Teamfluence]] — LinkedIn profile viewer tracking; identifies who checks your profile before they act
+- [[entities/fibbler|Fibbler]] — LinkedIn ad engager detection; surfaces prospects who engaged with ads but never clicked
+- [[entities/rb2b|RB2B]] — website visitor deanonymization from LinkedIn traffic; closes loop between content and outbound
+- [[entities/findymail|Findymail]] — 1st-pass email enrichment; cheapest provider, ~50–60% coverage
+- [[entities/zerobounce|ZeroBounce]] — email validation; final step in enrichment waterfall before sending
+- [[entities/customer-io|Customer.io]] — ESP + behavioral segmentation platform; central tool in Lemlist's lifecycle email stack; recommended at 1000+ users
+- [[entities/spicy-lemon|Spicy Lemon]] — French B2B content agency; producer of the Squeeze and SCALE podcast
 
 ---
 
