@@ -1,0 +1,12 @@
+# Obsidian workspace state (changes on every open)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Keep the rest of .obsidian (plugins, appearance, hotkeys)
+
+# Empty stubs Obsidian creates from unresolved wikilinks
+Welcome.md
+
+# OS
+.DS_Store
+Thumbs.db
