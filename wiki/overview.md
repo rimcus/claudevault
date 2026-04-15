@@ -4,7 +4,7 @@ type: overview
 tags: [meta, synthesis]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [karpathy-llm-wiki-pattern, codyschneider-gtm-agents, hridoyreh-saas-blueprint, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, alexvacca-gtm-engineering-hire, salescaptain-claude-code-gtm-playbook, salescaptain-linkedin-outbound-playbook, squeezeandscale-lemlist-email-nurturing]
+sources: [karpathy-llm-wiki-pattern, codyschneider-gtm-agents, hridoyreh-saas-blueprint, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, alexvacca-gtm-engineering-hire, salescaptain-claude-code-gtm-playbook, salescaptain-linkedin-outbound-playbook, squeezeandscale-lemlist-email-nurturing, anon-cold-email-systems-guide]
 ---
 
 # Overview
@@ -19,9 +19,9 @@ This vault is a personal knowledge base built on [[Andrej Karpathy]]'s [[LLM-Mai
 
 ## Current State of Knowledge
 
-**Sources ingested:** 9
-**Wiki pages:** 74
-**Last activity:** 2026-04-14
+**Sources ingested:** 10
+**Wiki pages:** 78
+**Last activity:** 2026-04-15
 
 ## The Emerging Synthesis
 
@@ -44,6 +44,8 @@ Eight sources now form a coherent, layered picture of AI-powered GTM:
 8. **[[sources/salescaptain-linkedin-outbound-playbook|SalesCaptain LinkedIn Playbook]]** closes the loop on channel strategy: LinkedIn requires content + outbound working as a [[Content Outbound Flywheel]]. Data-backed across 120,000+ DMs. 7 signal-triggered workflows. 79% ICP fit on inbound.
 
 9. **[[sources/squeezeandscale-lemlist-email-nurturing|Squeeze and Scale — Lemlist]]** (French podcast) extends the wiki into the **retention and lifecycle layer**: the shift from temporal email flows to [[Behavioral Email Triggers]] — using product events as triggers and LLMs for personalization. Validated at 7M emails/year scale: +800 demos, +4pts conversion, -40% churn. Confirms that the same signal-infrastructure architecture applies internally (product behavior) as externally (GTM signals). The most impactful single fix: pre-fill booking forms with known data → +120% demos at zero dev cost.
+
+10. **[[sources/anon-cold-email-systems-guide|Cold Email Systems Guide]]** (anonymous practitioner) provides the **infrastructure and craft layer** for cold email: the 20-emails/day speed limit, domain/inbox architecture, pay-per-call pricing, and the Meat/Potatoes/Toppings copywriting framework. Critically, it separates two failure modes that most sources conflate — infrastructure failures (deliverability) vs. copy failures (offer/personalization) — each with distinct diagnostics and fixes.
 
 ### The Key Synthesis
 
@@ -83,6 +85,7 @@ As tooling commoditizes, the moat narrows to three things:
 | Acquisition (LinkedIn Outbound) | 7 signal-triggered workflows, content flywheel | SalesCaptain |
 | Acquisition (Twitter Outreach) | Engager → enrich → cold email | Schneider |
 | Acquisition (Paid) | Google + Facebook Ads optimization | Schneider |
+| Acquisition (Cold Email) | Infrastructure (domains/inboxes/warmup), copy, pricing system | Cold Email Systems Guide |
 | Acquisition (Outbound) | Signal-triggered enrichment → sequencing | Vacca |
 | Activation | Behavioral email flows triggered on product actions | Squeeze and Scale / Lemlist |
 | Retention | Churn prevention flows (behavioral triggers + multi-channel) | Squeeze and Scale / Lemlist |
@@ -116,6 +119,8 @@ The GTM layer is increasingly automatable. The product layer remains human.
 - [[GTM Engineering]] — the synthesized concept
 - [[Signal Infrastructure]] — the key differentiating layer
 - [[Behavioral Email Triggers]] — the internal/product signal equivalent of GTM signal infrastructure
+- [[Cold Email Infrastructure]] — the technical plumbing layer; domain/inbox/speed-limit architecture
+- [[Cold Email Copywriting]] — Meat/Potatoes/Toppings; offer specificity; Spin Tax Rule
 - [[Content Outbound Flywheel]] — LinkedIn-specific strategic system
 - [[ICP Avatar]] — the upstream framework for all copy quality
 - [[LLM-Maintained Wiki]] — the core methodology concept

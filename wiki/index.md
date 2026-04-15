@@ -8,7 +8,7 @@ updated: 2026-04-14
 
 *Content catalog. Updated on every ingest. Read this first when answering queries — find relevant pages, then drill in.*
 
-**Total pages:** 74 | **Sources ingested:** 9 | **Last updated:** 2026-04-14
+**Total pages:** 78 | **Sources ingested:** 10 | **Last updated:** 2026-04-15
 
 ---
 
@@ -25,6 +25,7 @@ One page per ingested source. Links to raw file in `raw/sources/`.
 - [[sources/salescaptain-claude-code-gtm-playbook|Claude Code for GTM Playbook]] — Bill Stathopoulos / SalesCaptain: 12 playbooks, 8-step pipeline, ICP Avatar framework, CLAUDE.md as GTM engine; $50–150/month to run 2–4 campaigns (1 source)
 - [[sources/salescaptain-linkedin-outbound-playbook|LinkedIn Outbound Playbook 2026]] — Bill Stathopoulos / SalesCaptain: $1M+ pipeline, 7 signal-triggered workflows, 8 data-backed DM principles from 120K+ DMs, content + outbound flywheel (1 source)
 - [[sources/squeezeandscale-lemlist-email-nurturing|Email Marketing Data-Driven chez Lemlist]] — Squeeze and SCALE podcast (Spicy Lemon): Nicolas (Lemlist growth marketer) details the shift from temporal to behavioral email flows — 800+ demos, +4pts conversion, 600+ reviews, -40% churn (1 source, French)
+- [[sources/anon-cold-email-systems-guide|The Comprehensive Guide to Scalable B2B Cold Email Systems]] — Anonymous practitioner guide: 9-chapter system covering infrastructure (20/day speed limit), KPIs (1 deal/10K prospects), Meat/Potatoes/Toppings copywriting, pay-per-call pricing, and Spin Tax Rule
 
 ---
 
@@ -51,6 +52,8 @@ Topic and idea pages.
 - [[concepts/icp-avatar|ICP Avatar]] — 3-level pain hierarchy (surface → operational → identity-level); every phrase must come from exact customer quotes; the upstream fix for generic AI copy
 - [[concepts/content-outbound-flywheel|Content Outbound Flywheel]] — LinkedIn content pre-warms prospects before outreach; two buyer journeys reinforcing each other; 79% ICP fit on inbound
 - [[concepts/behavioral-email-triggers|Behavioral Email Triggers]] — triggering lifecycle emails on product actions rather than time-since-signup; the core architecture behind Lemlist's email marketing transformation
+- [[concepts/cold-email-infrastructure|Cold Email Infrastructure]] — the domain/inbox/warm-up architecture; 20 emails/day speed limit; how to scale volume by adding inboxes not rate
+- [[concepts/cold-email-copywriting|Cold Email Copywriting]] — Meat/Potatoes/Toppings framework; 4 personalization scenarios; Spin Tax Rule; Loom video strategy; subject line psychology
 
 ---
 

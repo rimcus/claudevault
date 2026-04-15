@@ -14,6 +14,21 @@ grep "^## \[" wiki/log.md | head -10
 
 ---
 
+## [2026-04-15] ingest | The Comprehensive Guide to Scalable B2B Cold Email Systems (Anonymous)
+
+- Summary page: [[sources/anon-cold-email-systems-guide]]
+- Raw source: `raw/sources/emails.docx`
+- Pages created:
+  - [[sources/anon-cold-email-systems-guide]]
+  - [[concepts/cold-email-infrastructure]]
+  - [[concepts/cold-email-copywriting]]
+- Pages updated:
+  - [[concepts/cold-email-personalization-problem]] (added pre-AI practitioner framing; Spin Tax Rule; infrastructure vs. copy diagnostic separation)
+  - [[wiki/index.md]], [[wiki/overview.md]]
+- Key takeaway: Cold email is a system with two distinct failure layers — infrastructure (deliverability; 20/day speed limit) and copy (offer specificity; personalization). Conflating them produces wrong diagnoses. The Golden KPI is 1 closed deal per 10,000 prospects. The pay-per-call model removes client risk and aligns incentives at the handoff point (booked meeting, not closed deal).
+
+---
+
 ## [2026-04-14] ingest | Email Marketing Squeeze and Scale — Lemlist Case Study (Spicy Lemon)
 
 - Summary page: [[sources/squeezeandscale-lemlist-email-nurturing]]
