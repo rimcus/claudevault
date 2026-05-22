@@ -4,7 +4,7 @@ type: concept
 tags: [gtm, data, enrichment, targeting, clay]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook]
+sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook, codyschneider-email-generation-agent]
 ---
 
 # Enrichment Waterfall
@@ -57,6 +57,19 @@ Vacca's specific claim: campaigns built with 8–12 data points per prospect sig
 
 The validation step is distinct from enrichment: ZeroBounce doesn't find emails, it removes bad ones. Both steps are required for clean deliverability.
 
+## Zero-Cost Alternative: Generate + Verify
+
+[[Cody Schneider]] describes a zero-cost alternative to the paid first-pass: generate every plausible email pattern for a person + domain (given a LinkedIn profile), then existence-check via a cheap API (e.g., mailtester.ninja) and validate with a deliverability tool (MillionVerifier).
+
+**Trade-off vs. paid first-pass:**
+
+| Approach | Cost | Coverage | Limitation |
+|----------|------|---------|-----------|
+| Paid enrichment (Findymail) | ~$0.01–0.05/contact | ~50–60% | Paid |
+| Generate + verify | Near-zero | ~60–70% of non-catch-all domains | Fails on catch-all domains |
+
+**Critical caveat (from @MrColdEmail):** 30–40% of business domains are configured as catch-alls — any email combination returns "valid," making the existence-check step unreliable for those domains. Best suited for SMB campaigns where cost matters and enterprise catch-all domains are less common.
+
 ## See Also
 
 - [[Signal Infrastructure]] — the upstream layer that feeds the waterfall
@@ -67,3 +80,4 @@ The validation step is distinct from enrichment: ZeroBounce doesn't find emails,
 - [[Apollo]] — 3rd-pass enrichment provider
 - [[sources/alexvacca-gtm-engineering-hire]] — Vacca's framework (8–12 data points)
 - [[sources/salescaptain-linkedin-outbound-playbook]] — SalesCaptain's waterfall with coverage numbers
+- [[sources/codyschneider-email-generation-agent]] — generate + verify as zero-cost alternative
