@@ -4,7 +4,7 @@ type: overview
 tags: [meta, synthesis]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [karpathy-llm-wiki-pattern, codyschneider-gtm-agents, hridoyreh-saas-blueprint, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, alexvacca-gtm-engineering-hire, salescaptain-claude-code-gtm-playbook, salescaptain-linkedin-outbound-playbook, squeezeandscale-lemlist-email-nurturing, anon-cold-email-systems-guide]
+sources: [karpathy-llm-wiki-pattern, codyschneider-gtm-agents, hridoyreh-saas-blueprint, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, alexvacca-gtm-engineering-hire, salescaptain-claude-code-gtm-playbook, salescaptain-linkedin-outbound-playbook, squeezeandscale-lemlist-email-nurturing, anon-cold-email-systems-guide, anon-cold-email-copy-playbook, nickabraham-claude-code-campaign-lists, codyschneider-email-generation-agent, codyschneider-marketing-agents-per-vertical]
 ---
 
 # Overview
@@ -19,13 +19,13 @@ This vault is a personal knowledge base built on [[Andrej Karpathy]]'s [[LLM-Mai
 
 ## Current State of Knowledge
 
-**Sources ingested:** 10
-**Wiki pages:** 78
-**Last activity:** 2026-04-15
+**Sources ingested:** 14
+**Wiki pages:** 86
+**Last activity:** 2026-05-22
 
 ## The Emerging Synthesis
 
-Eight sources now form a coherent, layered picture of AI-powered GTM:
+Fourteen sources now form a coherent, layered picture of AI-powered GTM:
 
 1. **[[sources/karpathy-llm-wiki-pattern|Karpathy]]** provides the methodology: LLMs should maintain persistent, compounding knowledge structures rather than re-deriving answers from scratch. This vault is the instantiation.
 
@@ -45,7 +45,15 @@ Eight sources now form a coherent, layered picture of AI-powered GTM:
 
 9. **[[sources/squeezeandscale-lemlist-email-nurturing|Squeeze and Scale — Lemlist]]** (French podcast) extends the wiki into the **retention and lifecycle layer**: the shift from temporal email flows to [[Behavioral Email Triggers]] — using product events as triggers and LLMs for personalization. Validated at 7M emails/year scale: +800 demos, +4pts conversion, -40% churn. Confirms that the same signal-infrastructure architecture applies internally (product behavior) as externally (GTM signals). The most impactful single fix: pre-fill booking forms with known data → +120% demos at zero dev cost.
 
-10. **[[sources/anon-cold-email-systems-guide|Cold Email Systems Guide]]** (anonymous practitioner) provides the **infrastructure and craft layer** for cold email: the 20-emails/day speed limit, domain/inbox architecture, pay-per-call pricing, and the Meat/Potatoes/Toppings copywriting framework. Critically, it separates two failure modes that most sources conflate — infrastructure failures (deliverability) vs. copy failures (offer/personalization) — each with distinct diagnostics and fixes.
+10. **[[sources/anon-cold-email-systems-guide|Cold Email Systems Guide]]** (anonymous practitioner) provides the **infrastructure and pricing layer** for cold email: the 20-emails/day speed limit, domain/inbox architecture, pay-per-call pricing, and the Meat/Potatoes/Toppings copywriting framework. Critically, it separates two failure modes that most sources conflate — infrastructure failures (deliverability) vs. copy failures (offer/personalization) — each with distinct diagnostics and fixes.
+
+11. **[[sources/anon-cold-email-copy-playbook|Cold Email Copy Playbook]]** (anonymous Notion export) deepens the copy layer: 5 psychological triggers, 4-element structure (≤80 words), subject line data (38% open rate: question + company name), Friction Test CTAs, 9 templates, ACV-based segmentation, 5-email follow-up sequence (65% of replies from emails 2–5), and 7 golden rules. Confirms and extends the systems guide's copy framework.
+
+12. **[[sources/nickabraham-claude-code-campaign-lists|Nick Abraham thread]]** validates Claude Code + MCP as a live operational tool at scale: 15+ concurrent campaigns, list management from 5hrs → 2hrs/week, org hierarchy intelligence, and the key architectural insight: *the MCP quality is the ceiling on Claude Code capability, not the LLM.*
+
+13. **[[sources/codyschneider-email-generation-agent|Schneider — Email Generation Agent]]** adds a zero-cost enrichment path: generate email patterns from LinkedIn + mailtester.ninja existence check + MillionVerifier validation. Critical caveat: unreliable on 30–40% of domains that are catch-alls.
+
+14. **[[sources/codyschneider-marketing-agents-per-vertical|Schneider — Agents Per Vertical]]** (May 2026) refines the GTM agents model: **one agent per channel**, each with SQL access to a shared [[Airbyte]] + [[ClickHouse]] warehouse. The breakthrough step: agents research best practices and **write their own skill files** — turning schema-governed behavior into a self-compounding loop. Confirms the data warehouse (not the LLM) is the durable moat. Also reveals [[Graphed]] has pivoted toward a service model (forward-deployed engineers in 5 business days).
 
 ### The Key Synthesis
 
@@ -99,7 +107,7 @@ The GTM layer is increasingly automatable. The product layer remains human.
 
 ## Open Questions / Gaps
 
-- What open-source data warehouse is recommended for Schneider's stack? (Not named in source)
+- ~~What open-source data warehouse is recommended for Schneider's stack?~~ **Resolved:** [[Airbyte]] + [[ClickHouse]] (named in [[sources/codyschneider-marketing-agents-per-vertical]]). Community caveat: 2–3 week setup minimum for clean data.
 - How do GTM agents handle errors or bad decisions? No source addresses agent failure modes or human review checkpoints.
 - What covers the Distribution phase? Current stack handles Acquisition but not SaaS Marketplaces, Directories, or Partnerships.
 - At what wiki scale should [[qmd]] be introduced?
@@ -116,11 +124,13 @@ The GTM layer is increasingly automatable. The product layer remains human.
 - [[sources/salescaptain-claude-code-gtm-playbook]] — Claude Code implementation layer
 - [[sources/salescaptain-linkedin-outbound-playbook]] — LinkedIn signal + flywheel
 - [[sources/squeezeandscale-lemlist-email-nurturing]] — lifecycle email / retention layer
+- [[sources/nickabraham-claude-code-campaign-lists]] — live MCP workflow: Claude Code for campaign list management at scale
+- [[sources/codyschneider-marketing-agents-per-vertical]] — agent-per-vertical model; Airbyte + ClickHouse; self-generating skill files
 - [[GTM Engineering]] — the synthesized concept
 - [[Signal Infrastructure]] — the key differentiating layer
 - [[Behavioral Email Triggers]] — the internal/product signal equivalent of GTM signal infrastructure
 - [[Cold Email Infrastructure]] — the technical plumbing layer; domain/inbox/speed-limit architecture
-- [[Cold Email Copywriting]] — Meat/Potatoes/Toppings; offer specificity; Spin Tax Rule
+- [[Cold Email Copywriting]] — Meat/Potatoes/Toppings; 4-element structure (≤80 words); Friction Test CTAs; 5-email follow-up sequence; ACV-based segmentation; 7 golden rules
 - [[Content Outbound Flywheel]] — LinkedIn-specific strategic system
 - [[ICP Avatar]] — the upstream framework for all copy quality
 - [[LLM-Maintained Wiki]] — the core methodology concept

@@ -8,7 +8,7 @@ updated: 2026-04-14
 
 *Content catalog. Updated on every ingest. Read this first when answering queries — find relevant pages, then drill in.*
 
-**Total pages:** 78 | **Sources ingested:** 10 | **Last updated:** 2026-04-15
+**Total pages:** 86 | **Sources ingested:** 14 | **Last updated:** 2026-05-22
 
 ---
 
@@ -26,6 +26,10 @@ One page per ingested source. Links to raw file in `raw/sources/`.
 - [[sources/salescaptain-linkedin-outbound-playbook|LinkedIn Outbound Playbook 2026]] — Bill Stathopoulos / SalesCaptain: $1M+ pipeline, 7 signal-triggered workflows, 8 data-backed DM principles from 120K+ DMs, content + outbound flywheel (1 source)
 - [[sources/squeezeandscale-lemlist-email-nurturing|Email Marketing Data-Driven chez Lemlist]] — Squeeze and SCALE podcast (Spicy Lemon): Nicolas (Lemlist growth marketer) details the shift from temporal to behavioral email flows — 800+ demos, +4pts conversion, 600+ reviews, -40% churn (1 source, French)
 - [[sources/anon-cold-email-systems-guide|The Comprehensive Guide to Scalable B2B Cold Email Systems]] — Anonymous practitioner guide: 9-chapter system covering infrastructure (20/day speed limit), KPIs (1 deal/10K prospects), Meat/Potatoes/Toppings copywriting, pay-per-call pricing, and Spin Tax Rule
+- [[sources/anon-cold-email-copy-playbook|Cold Email Copy Playbook]] — Anonymous Notion playbook: 5 psychological triggers, 4-element structure, subject line data (38% open rate for question + company name), Friction Test for CTAs, 9 copy templates, ACV-based segmentation, 5-email follow-up sequence (65% of replies come from emails 2–5)
+- [[sources/nickabraham-claude-code-campaign-lists|Claude Code for Cold Email Campaign Lists]] — Nick Abraham thread: Claude Code + Discolike MCP for campaign list management at scale; org hierarchy intelligence; 5 hours → 2 hours weekly; "MCP quality is the ceiling"
+- [[sources/codyschneider-email-generation-agent|Build an AI Agent to Get Anyone's Email for Free]] — Cody Schneider post: generate every email pattern from LinkedIn + existence-check via cheap API + validate; zero-cost alternative to paid enrichment; catch-all domain caveat (30–40% of domains)
+- [[sources/codyschneider-marketing-agents-per-vertical|Deploy Marketing Agents Per Vertical With Live Business Data]] — Cody Schneider post: agent-per-vertical model; Airbyte + ClickHouse named as open-source warehouse stack; agents write their own skill files (self-compounding); Graphed repositioned as a service (5-day implementation)
 
 ---
 
@@ -93,6 +97,10 @@ People, tools, organizations.
 - [[entities/zerobounce|ZeroBounce]] — email validation; final step in enrichment waterfall before sending
 - [[entities/customer-io|Customer.io]] — ESP + behavioral segmentation platform; central tool in Lemlist's lifecycle email stack; recommended at 1000+ users
 - [[entities/spicy-lemon|Spicy Lemon]] — French B2B content agency; producer of the Squeeze and SCALE podcast
+- [[entities/nick-abraham|Nick Abraham]] — cold email practitioner at scale (15+ campaigns); Claude Code + MCP workflow author
+- [[entities/discolike|Discolike]] — MCP provider connecting Claude Code to contact databases
+- [[entities/airbyte|Airbyte]] — open-source data pipeline; extraction and loading layer in the Airbyte + ClickHouse warehouse stack
+- [[entities/clickhouse|ClickHouse]] — open-source columnar database; storage and query layer in Schneider's recommended GTM agent data warehouse stack
 
 ---
 

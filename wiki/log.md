@@ -14,6 +14,65 @@ grep "^## \[" wiki/log.md | head -10
 
 ---
 
+## [2026-05-22] ingest | Post by @codyschneider — Marketing Agents Per Vertical
+
+- Summary page: [[sources/codyschneider-marketing-agents-per-vertical]]
+- Raw source: `raw/sources/Post by @codyschneider on X 1.md`
+- Pages created:
+  - [[sources/codyschneider-marketing-agents-per-vertical]]
+  - [[entities/airbyte]]
+  - [[entities/clickhouse]]
+- Pages updated:
+  - [[concepts/data-warehouse-for-ai]] (Airbyte + ClickHouse named as the open-source stack; resolves standing open question; 2–3 week setup caveat added)
+  - [[concepts/gtm-agents]] (sources frontmatter updated)
+  - [[concepts/gtm-engineering]] (agent-per-vertical model added; self-generating skill files loop)
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: The GTM agent model scales as one agent per marketing channel, each with SQL access to a shared Airbyte + ClickHouse warehouse. The differentiating step: agents research best practices and write their own skill files — turning schema-governed behavior into a self-compounding loop. The data warehouse (not the LLM) is the moat.
+
+---
+
+## [2026-04-15] ingest | Post by @codyschneider — Generate + Verify Email Agent
+
+- Summary page: [[sources/codyschneider-email-generation-agent]]
+- Raw source: `raw/sources/Post by @codyschneider on X.md`
+- Pages created:
+  - [[sources/codyschneider-email-generation-agent]]
+- Pages updated:
+  - [[concepts/enrichment-waterfall]] (added generate + verify as zero-cost alternative; catch-all domain caveat 30–40%)
+  - [[entities/graphed]] (noted dual role: analytics layer + GTM agent builder)
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: Email addresses are guessable from LinkedIn profiles + domain patterns. A cheap existence-check API + deliverability validator makes this nearly free. Critical caveat: 30–40% of business domains are catch-alls — any pattern returns "valid," making the technique unreliable for that segment.
+
+---
+
+## [2026-04-15] ingest | Thread by @NickAbraham12 — Claude Code for Campaign List Management
+
+- Summary page: [[sources/nickabraham-claude-code-campaign-lists]]
+- Raw source: `raw/sources/Thread by @NickAbraham12.md`
+- Pages created:
+  - [[sources/nickabraham-claude-code-campaign-lists]]
+  - [[entities/nick-abraham]]
+  - [[entities/discolike]]
+- Pages updated:
+  - [[concepts/gtm-engineering]] (added Nick Abraham's live operational workflow as the most concrete Claude Code + MCP use case in the wiki)
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: At 15+ concurrent campaigns, list management becomes the bottleneck — not copy or strategy. Claude Code + MCP handles org hierarchy resolution (ICP title doesn't exist at smaller companies → Claude finds who holds the role) and industry-specific title patterns autonomously. The ceiling is MCP quality, not LLM capability.
+
+---
+
+## [2026-04-15] ingest | Cold Email Copy Playbook (Anonymous, Notion export)
+
+- Summary page: [[sources/anon-cold-email-copy-playbook]]
+- Raw source: `raw/sources/Cold Email Copy Playbook/` (9 markdown files)
+- Pages created:
+  - [[sources/anon-cold-email-copy-playbook]]
+- Pages updated:
+  - [[concepts/cold-email-copywriting]] (major update: added 5 psychological triggers, 4-element structure with word counts, subject line open rate data, Friction Test CTA hierarchy, segmentation by ACV, 5-email follow-up sequence with angles, 7 golden rules, diagnostic guide)
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: 65% of replies come from follow-up emails 2–5 — the first email is the door knock, not the conversation. The Friction Test ranks CTAs by reply rate (Yes/No highest → "Book a call" lowest). Under 80 words is the hard ceiling. Subject lines: question + company name = 38% open rate; 7+ words = 19%.
+
+---
+
 ## [2026-04-15] ingest | The Comprehensive Guide to Scalable B2B Cold Email Systems (Anonymous)
 
 - Summary page: [[sources/anon-cold-email-systems-guide]]

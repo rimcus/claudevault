@@ -5,7 +5,7 @@ entity_kind: product
 tags: [tool, analytics, data-warehouse, gtm, saas]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads]
+sources: [codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, codyschneider-email-generation-agent]
 ---
 
 # Graphed
@@ -31,6 +31,10 @@ Cold email data → CRM ([[HubSpot]]) → Facebook Ads → Google Analytics → 
 ## Significance
 
 Graphed is Schneider's own product — he uses it in every pipeline he publishes. It's the piece that differentiates his approach from simple automation: by connecting revenue data, agents optimize for what actually matters (CLV) rather than intermediate metrics (clicks, opens).
+
+## GTM Agent Builder
+
+Schneider also promotes Graphed as the platform for building GTM agents beyond analytics — including the generate-and-verify email agent described in [[sources/codyschneider-email-generation-agent]]. This positions Graphed as both an analytics layer *and* an agent-building platform for outbound workflows.
 
 ## See Also
 

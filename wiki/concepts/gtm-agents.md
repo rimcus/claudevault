@@ -4,7 +4,7 @@ type: concept
 tags: [ai-agents, gtm, marketing-automation, sales, growth]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [codyschneider-gtm-agents, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, hridoyreh-saas-blueprint]
+sources: [codyschneider-gtm-agents, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, hridoyreh-saas-blueprint, codyschneider-marketing-agents-per-vertical]
 ---
 
 # GTM Agents
