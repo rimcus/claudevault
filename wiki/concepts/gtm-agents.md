@@ -4,7 +4,7 @@ type: concept
 tags: [ai-agents, gtm, marketing-automation, sales, growth]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [codyschneider-gtm-agents, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, hridoyreh-saas-blueprint, codyschneider-marketing-agents-per-vertical]
+sources: [codyschneider-gtm-agents, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, hridoyreh-saas-blueprint, codyschneider-marketing-agents-per-vertical, codyschneider-paid-ads-playbook]
 ---
 
 # GTM Agents
@@ -55,6 +55,18 @@ Per [[Hridoy Rehman]]'s [[SaaS Lifecycle]] blueprint, GTM agents primarily autom
 - **Revenue** (CRM enrichment supporting conversions)
 
 The implication: a well-configured agent stack can run most of the post-launch SaaS revenue engine autonomously.
+
+## Paid Ads Tactical Spec (June 2026)
+
+From [[sources/codyschneider-paid-ads-playbook]], the simplest effective paid ads system for SaaS:
+
+**Google Ads:** phrase match on bottom-of-funnel keywords → landing page H1/P1 = the keyword → conversion events for signup + payment.
+
+**Facebook Ads:** broad targeting (all of Facebook) → test 10 creatives/week → isolate winners into dedicated conversion campaigns → landing page H1/P1 matches the ad → same conversion events.
+
+**Measurement:** CAC vs CLV vs payback period via a dashboard ([[Graphed]] or Looker Studio). The one-number test: $1 in → $5 CLV out = scale. These are the feedback signals the Google Ads and Facebook Ads agents optimize against — not clicks or CPM.
+
+**Simplicity principle:** most SaaS founders fail at paid ads by overcomplicating targeting. Simple intent matching (Google) + creative volume (Facebook) outperforms clever strategy.
 
 ## Additional Pipelines (Beyond the Core 8)
 

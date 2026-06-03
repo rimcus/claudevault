@@ -19,13 +19,13 @@ This vault is a personal knowledge base built on [[Andrej Karpathy]]'s [[LLM-Mai
 
 ## Current State of Knowledge
 
-**Sources ingested:** 14
-**Wiki pages:** 86
-**Last activity:** 2026-05-22
+**Sources ingested:** 15
+**Wiki pages:** 87
+**Last activity:** 2026-06-03
 
 ## The Emerging Synthesis
 
-Fourteen sources now form a coherent, layered picture of AI-powered GTM:
+Fifteen sources now form a coherent, layered picture of AI-powered GTM:
 
 1. **[[sources/karpathy-llm-wiki-pattern|Karpathy]]** provides the methodology: LLMs should maintain persistent, compounding knowledge structures rather than re-deriving answers from scratch. This vault is the instantiation.
 
@@ -52,6 +52,8 @@ Fourteen sources now form a coherent, layered picture of AI-powered GTM:
 12. **[[sources/nickabraham-claude-code-campaign-lists|Nick Abraham thread]]** validates Claude Code + MCP as a live operational tool at scale: 15+ concurrent campaigns, list management from 5hrs → 2hrs/week, org hierarchy intelligence, and the key architectural insight: *the MCP quality is the ceiling on Claude Code capability, not the LLM.*
 
 13. **[[sources/codyschneider-email-generation-agent|Schneider — Email Generation Agent]]** adds a zero-cost enrichment path: generate email patterns from LinkedIn + mailtester.ninja existence check + MillionVerifier validation. Critical caveat: unreliable on 30–40% of domains that are catch-alls.
+
+15. **[[sources/codyschneider-paid-ads-playbook|Schneider — Paid Ads Playbook]]** (June 2026) is the most tactical source yet: a prescriptive two-platform system (Google: bottom-of-funnel phrase match; Facebook: 10 creatives/week + winner isolation) with a one-number measurement test ($1 in → $5 CLV out). Provides the tactical spec that the Google Ads and Facebook Ads agents in the [[GTM Agents]] blueprint actually run. The core principle: simplicity beats cleverness in SaaS paid ads.
 
 14. **[[sources/codyschneider-marketing-agents-per-vertical|Schneider — Agents Per Vertical]]** (May 2026) refines the GTM agents model: **one agent per channel**, each with SQL access to a shared [[Airbyte]] + [[ClickHouse]] warehouse. The breakthrough step: agents research best practices and **write their own skill files** — turning schema-governed behavior into a self-compounding loop. Confirms the data warehouse (not the LLM) is the durable moat. Also reveals [[Graphed]] has pivoted toward a service model (forward-deployed engineers in 5 business days).
 

@@ -5,7 +5,7 @@ entity_kind: product
 tags: [tool, analytics, data-warehouse, gtm, saas]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, codyschneider-email-generation-agent]
+sources: [codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, codyschneider-email-generation-agent, codyschneider-paid-ads-playbook]
 ---
 
 # Graphed
@@ -35,6 +35,10 @@ Graphed is Schneider's own product — he uses it in every pipeline he publishes
 ## GTM Agent Builder
 
 Schneider also promotes Graphed as the platform for building GTM agents beyond analytics — including the generate-and-verify email agent described in [[sources/codyschneider-email-generation-agent]]. This positions Graphed as both an analytics layer *and* an agent-building platform for outbound workflows.
+
+## Paid Ads Dashboard Role
+
+In [[sources/codyschneider-paid-ads-playbook]] (June 2026), Schneider names Graphed explicitly as the recommended dashboard tool for the paid ads measurement framework — tracking CAC vs CLV vs payback period across Google Ads and Facebook Ads. The alternative he mentions is Looker Studio. This confirms Graphed's positioning as the canonical measurement layer for the full Schneider GTM stack.
 
 ## See Also
 

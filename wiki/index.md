@@ -8,7 +8,7 @@ updated: 2026-04-14
 
 *Content catalog. Updated on every ingest. Read this first when answering queries — find relevant pages, then drill in.*
 
-**Total pages:** 86 | **Sources ingested:** 14 | **Last updated:** 2026-05-22
+**Total pages:** 87 | **Sources ingested:** 15 | **Last updated:** 2026-06-03
 
 ---
 
@@ -30,6 +30,7 @@ One page per ingested source. Links to raw file in `raw/sources/`.
 - [[sources/nickabraham-claude-code-campaign-lists|Claude Code for Cold Email Campaign Lists]] — Nick Abraham thread: Claude Code + Discolike MCP for campaign list management at scale; org hierarchy intelligence; 5 hours → 2 hours weekly; "MCP quality is the ceiling"
 - [[sources/codyschneider-email-generation-agent|Build an AI Agent to Get Anyone's Email for Free]] — Cody Schneider post: generate every email pattern from LinkedIn + existence-check via cheap API + validate; zero-cost alternative to paid enrichment; catch-all domain caveat (30–40% of domains)
 - [[sources/codyschneider-marketing-agents-per-vertical|Deploy Marketing Agents Per Vertical With Live Business Data]] — Cody Schneider post: agent-per-vertical model; Airbyte + ClickHouse named as open-source warehouse stack; agents write their own skill files (self-compounding); Graphed repositioned as a service (5-day implementation)
+- [[sources/codyschneider-paid-ads-playbook|Stop Overcomplicating Paid Ads for SaaS]] — Cody Schneider post: Google (bottom-of-funnel phrase match) + Facebook (10 creatives/week, isolate winners) + CLV-based measurement; the tactical spec for the paid ads GTM agents
 
 ---
 

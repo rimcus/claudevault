@@ -14,6 +14,20 @@ grep "^## \[" wiki/log.md | head -10
 
 ---
 
+## [2026-06-02] ingest | Post by @codyschneider — Stop Overcomplicating Paid Ads for SaaS
+
+- Summary page: [[sources/codyschneider-paid-ads-playbook]]
+- Raw source: `raw/sources/Post by @codyschneider on X 2.md`
+- Pages created:
+  - [[sources/codyschneider-paid-ads-playbook]]
+- Pages updated:
+  - [[concepts/gtm-agents]] (added paid ads tactical spec section: Google phrase-match intent + Facebook creative-volume system + CLV measurement framework)
+  - [[entities/graphed]] (added paid ads dashboard role; named alongside Looker Studio as the recommended measurement layer)
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: Schneider's paid ads playbook reduces to two simple systems — Google for intent capture (bottom-of-funnel phrase match), Facebook for creative volume (10/week, isolate winners). Measurement collapses to one number: $1 in → $5 CLV out. Complexity is the failure mode, not the solution.
+
+---
+
 ## [2026-05-22] ingest | Post by @codyschneider — Marketing Agents Per Vertical
 
 - Summary page: [[sources/codyschneider-marketing-agents-per-vertical]]
