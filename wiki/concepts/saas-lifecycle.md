@@ -4,7 +4,7 @@ type: concept
 tags: [saas, startup, product, growth, framework]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [hridoyreh-saas-blueprint]
+sources: [hridoyreh-saas-blueprint, theory-fb-ads-library-claude-saas]
 ---
 
 # SaaS Lifecycle
@@ -47,6 +47,17 @@ The blueprint is most useful not as a sequential checklist but as a map: you are
 
 Distribution was notably absent from the original blueprint and only added after community pushback. This mirrors a well-documented founder failure mode: technical founders over-index on Development and under-invest in Distribution. The blueprint's omission — and correction — makes this pattern explicit.
 
+## Compressed Lifecycle: AI-Assisted Build (2026)
+
+[[sources/theory-fb-ads-library-claude-saas]] demonstrates how AI tooling compresses the first eight phases:
+
+- **Idea + Validation** → replaced by Facebook Ads Library reconnaissance (ad longevity = proof of demand)
+- **Planning + Design + Development** → compressed by Claude (generates spec) + [[Lovable]] (generates 75–80% of app in one session)
+- **Infrastructure + Testing** → fast: swap Lovable Cloud for real Supabase + Stripe + Vercel
+- **Launch** → quiet: small relevant list + communities
+
+Total time from idea to paying customers: ~10 days. See [[Ad Library Market Validation]] for the full pattern.
+
 ## Connection to AI Agents
 
 [[Cody Schneider]]'s [[GTM Agents]] stack automates phases 9 (Acquisition) and 14 (Retention) almost entirely. The @botanium community observation: "assign each part to an agent and start cooking" — the blueprint doubles as an agent assignment map for the full SaaS stack.
@@ -62,5 +73,6 @@ Distribution was notably absent from the original blueprint and only added after
 
 - [[sources/hridoyreh-saas-blueprint]] — the source blueprint
 - [[GTM Agents]] — automates the Acquisition and Retention phases
+- [[Ad Library Market Validation]] — compresses phases 1–8 using FB Ads Library + Claude + Lovable
 - [[Hridoy Rehman]] — author
 - [[AI Marketing Stack]] — the tooling for the GTM phases

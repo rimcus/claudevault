@@ -14,6 +14,22 @@ grep "^## \[" wiki/log.md | head -10
 
 ---
 
+## [2026-06-10] ingest | [METHOD] FB Ads Library + Claude = $$$ (BlackHatWorld)
+
+- Summary page: [[sources/theory-fb-ads-library-claude-saas]]
+- Raw source: `raw/sources/METHOD FB ads Library + Claude = $$$.md`
+- Pages created:
+  - [[sources/theory-fb-ads-library-claude-saas]]
+  - [[concepts/ad-library-market-validation]]
+  - [[entities/lovable]]
+  - [[entities/higgsfield]]
+- Pages updated:
+  - [[concepts/saas-lifecycle]] (added compressed lifecycle section: 8 phases → ~10 days via FB Ads Library + Claude + Lovable)
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: Facebook Ads Library ad longevity (1+ week running in premium markets) is a proxy for product-market fit before you've built anything. Claude scores opportunities for SaaS recurring potential, generates a full Lovable-ready spec, and the build takes ~9 days. The author built 3 of 6 portfolio products this way — £2,950 combined MRR. The core filter: recurring operational pain (subscription-worthy) vs. one-off pain (not SaaS).
+
+---
+
 ## [2026-06-02] ingest | Post by @codyschneider — Stop Overcomplicating Paid Ads for SaaS
 
 - Summary page: [[sources/codyschneider-paid-ads-playbook]]

@@ -19,13 +19,13 @@ This vault is a personal knowledge base built on [[Andrej Karpathy]]'s [[LLM-Mai
 
 ## Current State of Knowledge
 
-**Sources ingested:** 15
-**Wiki pages:** 87
-**Last activity:** 2026-06-03
+**Sources ingested:** 16
+**Wiki pages:** 91
+**Last activity:** 2026-06-10
 
 ## The Emerging Synthesis
 
-Fifteen sources now form a coherent, layered picture of AI-powered GTM:
+Sixteen sources now form a coherent, layered picture of AI-powered GTM:
 
 1. **[[sources/karpathy-llm-wiki-pattern|Karpathy]]** provides the methodology: LLMs should maintain persistent, compounding knowledge structures rather than re-deriving answers from scratch. This vault is the instantiation.
 
@@ -52,6 +52,8 @@ Fifteen sources now form a coherent, layered picture of AI-powered GTM:
 12. **[[sources/nickabraham-claude-code-campaign-lists|Nick Abraham thread]]** validates Claude Code + MCP as a live operational tool at scale: 15+ concurrent campaigns, list management from 5hrs → 2hrs/week, org hierarchy intelligence, and the key architectural insight: *the MCP quality is the ceiling on Claude Code capability, not the LLM.*
 
 13. **[[sources/codyschneider-email-generation-agent|Schneider — Email Generation Agent]]** adds a zero-cost enrichment path: generate email patterns from LinkedIn + mailtester.ninja existence check + MillionVerifier validation. Critical caveat: unreliable on 30–40% of domains that are catch-alls.
+
+16. **[[sources/theory-fb-ads-library-claude-saas|FB Ads Library + Claude Method]]** (BlackHatWorld, May 2026) is the first source in this wiki to address the **pre-GTM build phase** — specifically, how to validate demand before building. The technique uses Facebook Ads Library ad longevity as a proxy for product-market fit, Claude to score for SaaS recurring potential and generate a full Lovable-ready spec, and [[Lovable]] (AI app builder) to produce 75–80% of the MVP in one session. Total cycle: ~10 days idea-to-paying-customers. Results: £2,950 combined MRR across 6 products. Introduces two new entities ([[Lovable]], [[Higgsfield]]) and a new pattern concept ([[Ad Library Market Validation]]) that extends the wiki upstream into the product discovery and validation phases of the [[SaaS Lifecycle]].
 
 15. **[[sources/codyschneider-paid-ads-playbook|Schneider — Paid Ads Playbook]]** (June 2026) is the most tactical source yet: a prescriptive two-platform system (Google: bottom-of-funnel phrase match; Facebook: 10 creatives/week + winner isolation) with a one-number measurement test ($1 in → $5 CLV out). Provides the tactical spec that the Google Ads and Facebook Ads agents in the [[GTM Agents]] blueprint actually run. The core principle: simplicity beats cleverness in SaaS paid ads.
 
