@@ -4,7 +4,7 @@ type: concept
 tags: [advertising, ugc, ai-video, facebook-ads, content-generation]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [codyschneider-ai-ugc-ads, codyschneider-fb-ads-ugc-playbook]
+sources: [codyschneider-ai-ugc-ads, codyschneider-fb-ads-ugc-playbook, codyschneider-transcript-personas]
 ---
 
 # AI UGC Ads
@@ -46,7 +46,11 @@ Build dedicated landing pages for winning ads. Message-to-page match (the ad's s
 
 From [[sources/codyschneider-fb-ads-ugc-playbook]], the full tactical detail:
 
-**Research:** Use Perplexity to search "pain points [x person] has for [y thing] that my [z product] solves reddit," then follow up for "exact quotes." This surfaces verbatim Reddit language — the raw input for scripts that sound like real customers.
+**Research (two sources, ranked):**
+- **Best:** Sales call transcripts — mine 10, extract exact language, find 3–4 repeating motivations. Customer said it unprompted in a buying context. See [[sources/codyschneider-transcript-personas]].
+- **Proxy when no transcripts:** Use Perplexity to search "pain points [x person] has for [y thing] that my [z product] solves reddit," then follow up for "exact quotes." Verbatim Reddit language is the next best thing.
+
+**Persona → script mapping:** desire → hook, fear → body, belief → agreement before reframe. The demographic is the targeting layer, not the brief. See [[ICP Avatar]].
 
 **Video tools:** [[HeyGen]] (original), plus now [[Seedance]] and [[Veo3]] (Google) as alternatives.
 

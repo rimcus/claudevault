@@ -4,7 +4,7 @@ type: concept
 tags: [gtm, icp, copy, outbound, targeting, saas]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [salescaptain-claude-code-gtm-playbook]
+sources: [salescaptain-claude-code-gtm-playbook, codyschneider-transcript-personas]
 ---
 
 # ICP Avatar
@@ -38,6 +38,27 @@ The identity-level pain is where deals actually close. Surface pain gets you not
 - Lost deal notes
 - Onboarding calls
 
+## The Advertising-Specific Persona (Schneider, June 2026)
+
+[[sources/codyschneider-transcript-personas]] extends the ICP Avatar into the Facebook ads creative layer with a sharper 4-part definition:
+
+| Element | What it is | Maps to |
+|---------|-----------|---------|
+| **Motivation** | What drives them at the deepest level | Identity-level pain |
+| **Primary desire** | What they want to become or achieve | Goes in the **hook** |
+| **Core fear** | What they're afraid of if they don't act | Goes in the **body** |
+| **Belief** | What they already hold about themselves and your category | You **agree with it** before reframing |
+
+**The key distinction — persona vs. demographic:**
+
+A demographic (VP of Marketing, 50–200 employees, SaaS) tells you who's in the room. It never explains why anyone acts. The persona is the *why*. The demographic becomes the targeting layer only — it is not the message.
+
+Most advertisers write to the demographic and wonder why the ad converts at agency average.
+
+**Transcript mining as the primary research method:**
+
+The motivation, desire, fear, and belief are already in sales call recordings. Someone said it out loud three weeks ago — the real reason they were looking, the thing that kept them up, the version of themselves they're trying to become. Pull 10 transcripts, extract exact language, find the 3–4 motivations that repeat. Those are your personas. Transcripts outperform Reddit research because the customer used their own language unprompted, in a buying context, about a specific problem.
+
 ## How Claude Code Uses the ICP Avatar
 
 In [[SalesCaptain]]'s implementation, the ICP Avatar is stored as a playbook file. Claude Code reads it when generating copy, scoring leads, or routing sequences — ensuring every output is grounded in real buyer language rather than generic benefit statements.
@@ -48,8 +69,10 @@ The ICP Avatar is one of [[Stathopoulos]]'s explicit "keep human" items: ICP def
 
 ## See Also
 
-- [[sources/salescaptain-claude-code-gtm-playbook]] — primary source
+- [[sources/salescaptain-claude-code-gtm-playbook]] — primary source (outbound copy application)
+- [[sources/codyschneider-transcript-personas]] — advertising application; 4-part persona definition; transcript mining; ad structure (hook/body/belief)
 - [[Bill Stathopoulos]] — originator
 - [[Hybrid AI Model]] — ICP definition is the "hybrid" category (AI drafts, human approves)
 - [[Cold Email Personalization Problem]] — ICP Avatar is the upstream fix for generic AI copy
 - [[Schema-Governed LLM Behavior]] — the ICP Avatar is stored as a playbook Claude reads at runtime
+- [[AI UGC Ads]] — the ad creative pipeline personas feed into

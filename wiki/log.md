@@ -14,6 +14,20 @@ grep "^## \[" wiki/log.md | head -10
 
 ---
 
+## [2026-06-16] ingest | Post by @codyschneider — Transcript-Based Personas for Facebook Ads
+
+- Summary page: [[sources/codyschneider-transcript-personas]]
+- Raw source: `raw/sources/Cody Schneider on X man the biggest arbitrage right now...md`
+- Pages created:
+  - [[sources/codyschneider-transcript-personas]]
+- Pages updated:
+  - [[concepts/icp-avatar]] (added Schneider's 4-part persona definition; persona vs. demographic distinction; transcript mining as primary research; desire→hook, fear→body, belief→agreement ad structure)
+  - [[concepts/ai-ugc-ads]] (ranked research sources: transcripts best, Reddit proxy; added persona→script mapping)
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: Persona = motivation + desire + fear + belief. Demographic = the room, not the why. Everyone targeting "VP Marketing, 50-200 employees" writes ads to the room and converts at agency average. The transcripts already hold the real language — mine 10, find 3-4 repeating motivations, write to those. The arbitrage closes as more teams adopt LLMs to extract this data.
+
+---
+
 ## [2026-06-16] ingest | Post by @codyschneider — Facebook Ads for SaaS 101
 
 - Summary page: [[sources/codyschneider-fb-ads-ugc-playbook]]

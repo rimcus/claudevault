@@ -8,7 +8,7 @@ updated: 2026-04-14
 
 *Content catalog. Updated on every ingest. Read this first when answering queries — find relevant pages, then drill in.*
 
-**Total pages:** 97 | **Sources ingested:** 18 | **Last updated:** 2026-06-16
+**Total pages:** 98 | **Sources ingested:** 19 | **Last updated:** 2026-06-16
 
 ---
 
@@ -34,6 +34,7 @@ One page per ingested source. Links to raw file in `raw/sources/`.
 - [[sources/theory-fb-ads-library-claude-saas|[METHOD] FB Ads Library + Claude = $$$]] — BlackHatWorld practitioner post: Facebook Ads Library → Claude scoring → Lovable-ready prompt → MVP in ~10 days; £2,950 MRR across 6 tools; the market-validation-first build methodology
 - [[sources/codyschneider-ai-search-seo|Stop Overcomplicating This: AI Search Is Just SEO]] — Cody Schneider post: two-lever framework (rank page 1-3 for comparison keywords + acquire AI citations via PromptWatch + Instantly); the tactical spec for the SEO agent
 - [[sources/codyschneider-fb-ads-ugc-playbook|Facebook Ads for SaaS 101]] — Cody Schneider post: Perplexity + Reddit quotes → Claude scripts → HeyGen/Seedance/Veo3 video → click campaign (7 days) → conversion campaign; Business Page Admin targeting; GTM conversion tracking detail
+- [[sources/codyschneider-transcript-personas|Transcript-Based Personas for Facebook Ads]] — Cody Schneider post: persona = motivation + desire + fear + belief (not demographic); transcripts are where all of this already lives; desire → hook, fear → body, belief → agreement before reframe; 10 transcripts yield 3–4 repeating personas
 
 ---
 
