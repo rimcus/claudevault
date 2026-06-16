@@ -19,13 +19,13 @@ This vault is a personal knowledge base built on [[Andrej Karpathy]]'s [[LLM-Mai
 
 ## Current State of Knowledge
 
-**Sources ingested:** 16
-**Wiki pages:** 91
-**Last activity:** 2026-06-10
+**Sources ingested:** 17
+**Wiki pages:** 94
+**Last activity:** 2026-06-16
 
 ## The Emerging Synthesis
 
-Sixteen sources now form a coherent, layered picture of AI-powered GTM:
+Seventeen sources now form a coherent, layered picture of AI-powered GTM:
 
 1. **[[sources/karpathy-llm-wiki-pattern|Karpathy]]** provides the methodology: LLMs should maintain persistent, compounding knowledge structures rather than re-deriving answers from scratch. This vault is the instantiation.
 
@@ -52,6 +52,8 @@ Sixteen sources now form a coherent, layered picture of AI-powered GTM:
 12. **[[sources/nickabraham-claude-code-campaign-lists|Nick Abraham thread]]** validates Claude Code + MCP as a live operational tool at scale: 15+ concurrent campaigns, list management from 5hrs → 2hrs/week, org hierarchy intelligence, and the key architectural insight: *the MCP quality is the ceiling on Claude Code capability, not the LLM.*
 
 13. **[[sources/codyschneider-email-generation-agent|Schneider — Email Generation Agent]]** adds a zero-cost enrichment path: generate email patterns from LinkedIn + mailtester.ninja existence check + MillionVerifier validation. Critical caveat: unreliable on 30–40% of domains that are catch-alls.
+
+17. **[[sources/codyschneider-ai-search-seo|Schneider — AI Search Is Just SEO]]** (June 2026) closes the loop on the SEO agent's tactical spec. The reframe: AI search is not a new discipline — two levers only. Lever 1: rank page 1–3 for comparison keywords ("best X for Y," "X alternative," etc.) → AI search pulls traffic from those pages. Lever 2: acquire citations from sources AI platforms already trust, mapped via [[PromptWatch]] and acquired via cold email ([[Instantly]]). Priority-stack citations by frequency — a small number of sources dominate citation share in each category. Introduces [[AI Search SEO]] as a concept and [[PromptWatch]] as a new entity.
 
 16. **[[sources/theory-fb-ads-library-claude-saas|FB Ads Library + Claude Method]]** (BlackHatWorld, May 2026) is the first source in this wiki to address the **pre-GTM build phase** — specifically, how to validate demand before building. The technique uses Facebook Ads Library ad longevity as a proxy for product-market fit, Claude to score for SaaS recurring potential and generate a full Lovable-ready spec, and [[Lovable]] (AI app builder) to produce 75–80% of the MVP in one session. Total cycle: ~10 days idea-to-paying-customers. Results: £2,950 combined MRR across 6 products. Introduces two new entities ([[Lovable]], [[Higgsfield]]) and a new pattern concept ([[Ad Library Market Validation]]) that extends the wiki upstream into the product discovery and validation phases of the [[SaaS Lifecycle]].
 

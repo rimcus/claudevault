@@ -8,7 +8,7 @@ updated: 2026-04-14
 
 *Content catalog. Updated on every ingest. Read this first when answering queries — find relevant pages, then drill in.*
 
-**Total pages:** 91 | **Sources ingested:** 16 | **Last updated:** 2026-06-10
+**Total pages:** 94 | **Sources ingested:** 17 | **Last updated:** 2026-06-16
 
 ---
 
@@ -32,6 +32,7 @@ One page per ingested source. Links to raw file in `raw/sources/`.
 - [[sources/codyschneider-marketing-agents-per-vertical|Deploy Marketing Agents Per Vertical With Live Business Data]] — Cody Schneider post: agent-per-vertical model; Airbyte + ClickHouse named as open-source warehouse stack; agents write their own skill files (self-compounding); Graphed repositioned as a service (5-day implementation)
 - [[sources/codyschneider-paid-ads-playbook|Stop Overcomplicating Paid Ads for SaaS]] — Cody Schneider post: Google (bottom-of-funnel phrase match) + Facebook (10 creatives/week, isolate winners) + CLV-based measurement; the tactical spec for the paid ads GTM agents
 - [[sources/theory-fb-ads-library-claude-saas|[METHOD] FB Ads Library + Claude = $$$]] — BlackHatWorld practitioner post: Facebook Ads Library → Claude scoring → Lovable-ready prompt → MVP in ~10 days; £2,950 MRR across 6 tools; the market-validation-first build methodology
+- [[sources/codyschneider-ai-search-seo|Stop Overcomplicating This: AI Search Is Just SEO]] — Cody Schneider post: two-lever framework (rank page 1-3 for comparison keywords + acquire AI citations via PromptWatch + Instantly); the tactical spec for the SEO agent
 
 ---
 
@@ -61,6 +62,7 @@ Topic and idea pages.
 - [[concepts/cold-email-infrastructure|Cold Email Infrastructure]] — the domain/inbox/warm-up architecture; 20 emails/day speed limit; how to scale volume by adding inboxes not rate
 - [[concepts/cold-email-copywriting|Cold Email Copywriting]] — Meat/Potatoes/Toppings framework; 4 personalization scenarios; Spin Tax Rule; Loom video strategy; subject line psychology
 - [[concepts/ad-library-market-validation|Ad Library Market Validation]] — using Facebook Ads Library ad longevity as demand proof before building; Claude scores for SaaS recurring potential; Lovable builds the MVP; ~10 days idea-to-MRR
+- [[concepts/ai-search-seo|AI Search SEO]] — AI search is just SEO with two levers: rank page 1-3 for comparison keywords, and acquire citations from sources AI search already trusts; PromptWatch maps the citation landscape
 
 ---
 
@@ -106,6 +108,7 @@ People, tools, organizations.
 - [[entities/clickhouse|ClickHouse]] — open-source columnar database; storage and query layer in Schneider's recommended GTM agent data warehouse stack
 - [[entities/lovable|Lovable]] — AI app builder; generates 75–80% of a full-stack SaaS MVP from a single Claude-written prompt in one session
 - [[entities/higgsfield|Higgsfield]] — MCP connector for image generation and structured visual output; enriches Claude prompts before passing to Lovable
+- [[entities/promptwatch|PromptWatch]] — citation intelligence tool; identifies which sources AI search platforms use for a given category of queries
 
 ---
 

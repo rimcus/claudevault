@@ -14,6 +14,21 @@ grep "^## \[" wiki/log.md | head -10
 
 ---
 
+## [2026-06-16] ingest | Post by @codyschneider — AI Search Is Just SEO
+
+- Summary page: [[sources/codyschneider-ai-search-seo]]
+- Raw source: `raw/sources/Post by @codyschneider on X 3.md`
+- Pages created:
+  - [[sources/codyschneider-ai-search-seo]]
+  - [[concepts/ai-search-seo]]
+  - [[entities/promptwatch]]
+- Pages updated:
+  - [[concepts/gtm-agents]] (added SEO agent tactical spec: two-lever system, PromptWatch for citation mapping, Instantly for citation outreach)
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: AI search optimization reduces to two levers — rank page 1-3 for bottom-of-funnel comparison keywords, and acquire citations from sources AI search already trusts. PromptWatch identifies which citations dominate a category; priority-stacking by citation frequency determines where to concentrate spend. The SEO agent executes Lever 1 autonomously; Lever 2 maps to the cold outreach agent.
+
+---
+
 ## [2026-06-10] ingest | [METHOD] FB Ads Library + Claude = $$$ (BlackHatWorld)
 
 - Summary page: [[sources/theory-fb-ads-library-claude-saas]]

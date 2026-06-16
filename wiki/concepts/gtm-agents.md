@@ -4,7 +4,7 @@ type: concept
 tags: [ai-agents, gtm, marketing-automation, sales, growth]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [codyschneider-gtm-agents, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, hridoyreh-saas-blueprint, codyschneider-marketing-agents-per-vertical, codyschneider-paid-ads-playbook]
+sources: [codyschneider-gtm-agents, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, hridoyreh-saas-blueprint, codyschneider-marketing-agents-per-vertical, codyschneider-paid-ads-playbook, codyschneider-ai-search-seo]
 ---
 
 # GTM Agents
@@ -55,6 +55,16 @@ Per [[Hridoy Rehman]]'s [[SaaS Lifecycle]] blueprint, GTM agents primarily autom
 - **Revenue** (CRM enrichment supporting conversions)
 
 The implication: a well-configured agent stack can run most of the post-launch SaaS revenue engine autonomously.
+
+## SEO Agent Tactical Spec (June 2026)
+
+From [[sources/codyschneider-ai-search-seo]], the two-lever SEO system the SEO agent executes:
+
+**Lever 1 — Rank for bottom-of-funnel keywords:** Target "best X for Y / X alternative / tools like X" patterns. Scrape what's on page 1 → define product differentiation → write a post that includes your product and its differences → publish + sitemap. Pro tips: 100 pages per sitemap URL for faster indexing; minimize page size for crawl budget.
+
+**Lever 2 — Acquire AI citations:** Use [[PromptWatch]] to map which citations AI search platforms (ChatGPT, Perplexity, etc.) use for target keywords → export and priority-rank by citation frequency → cold email site owners via [[Instantly]] requesting citation inclusion (expect paid placement) → prioritize spend on highest-frequency citations.
+
+**The reframe:** AI search is not a new discipline — it is SEO with two levers. The SEO agent runs Lever 1 autonomously (keyword research, content, publish, sitemap). Lever 2 maps to the cold outreach agent with a different target list. See [[AI Search SEO]] for the full concept.
 
 ## Paid Ads Tactical Spec (June 2026)
 
