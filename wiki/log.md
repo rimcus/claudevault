@@ -14,6 +14,20 @@ grep "^## \[" wiki/log.md | head -10
 
 ---
 
+## [2026-06-16] ingest | Post by @codyschneider — Facebook Ads Andromeda Update
+
+- Summary page: [[sources/codyschneider-andromeda-b2b-facebook]]
+- Raw source: `raw/sources/codyschneider-andromeda-b2b-facebook.md` (renamed from long filename)
+- Pages created:
+  - [[sources/codyschneider-andromeda-b2b-facebook]]
+- Pages updated:
+  - [[concepts/ai-ugc-ads]] (added Andromeda section: creative IS targeting; packs over single ad; broad targeting works because Andromeda does audience-finding)
+  - [[concepts/signal-infrastructure]] (added Andromeda paid ads signal layer: clean pixel + CAPI + real conversion events; same "no garbage in" principle as GTM data warehouse)
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: The Andromeda algorithm update is the theoretical foundation for Schneider's entire Facebook ads approach. It explains why broad targeting works (algo does audience-finding from creative signals), why creative volume scales (each creative finds a different buyer cohort), and why clean conversion events are non-negotiable (bad signal corrupts the algorithm's learning). The moat shifted from media-buying tricks to persona definitions + creative volume + data infra — three things the wiki already covers in depth.
+
+---
+
 ## [2026-06-16] ingest | Post by @codyschneider — Transcript-Based Personas for Facebook Ads
 
 - Summary page: [[sources/codyschneider-transcript-personas]]

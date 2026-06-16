@@ -19,13 +19,13 @@ This vault is a personal knowledge base built on [[Andrej Karpathy]]'s [[LLM-Mai
 
 ## Current State of Knowledge
 
-**Sources ingested:** 19
-**Wiki pages:** 98
+**Sources ingested:** 20
+**Wiki pages:** 99
 **Last activity:** 2026-06-16
 
 ## The Emerging Synthesis
 
-Nineteen sources now form a coherent, layered picture of AI-powered GTM:
+Twenty sources now form a coherent, layered picture of AI-powered GTM:
 
 1. **[[sources/karpathy-llm-wiki-pattern|Karpathy]]** provides the methodology: LLMs should maintain persistent, compounding knowledge structures rather than re-deriving answers from scratch. This vault is the instantiation.
 
@@ -52,6 +52,8 @@ Nineteen sources now form a coherent, layered picture of AI-powered GTM:
 12. **[[sources/nickabraham-claude-code-campaign-lists|Nick Abraham thread]]** validates Claude Code + MCP as a live operational tool at scale: 15+ concurrent campaigns, list management from 5hrs → 2hrs/week, org hierarchy intelligence, and the key architectural insight: *the MCP quality is the ceiling on Claude Code capability, not the LLM.*
 
 13. **[[sources/codyschneider-email-generation-agent|Schneider — Email Generation Agent]]** adds a zero-cost enrichment path: generate email patterns from LinkedIn + mailtester.ninja existence check + MillionVerifier validation. Critical caveat: unreliable on 30–40% of domains that are catch-alls.
+
+20. **[[sources/codyschneider-andromeda-b2b-facebook|Schneider — Andromeda & B2B Facebook Ads]]** (June 2026) is the theoretical capstone for the entire Schneider paid ads stack. Meta's Andromeda algorithm killed audience-first targeting — the algo now reads creative + landing page, predicts converters from behavioral signals, and finds them. For B2B, this removes the channel's historical limitation (can't target niche professional audiences) and turns creative into the targeting mechanism. The two inputs that now matter: (1) creative packs — multiple angles to reach multiple buyer cohorts simultaneously, and (2) clean signal data — pixel + Conversion API + real conversion events (signup, payment). The moat shifted from media-buying tricks to persona definitions + creative volume + data infrastructure. This post explains *why* the other Schneider Facebook posts recommend what they recommend.
 
 19. **[[sources/codyschneider-transcript-personas|Schneider — Transcript-Based Personas]]** (June 2026) provides the creative input layer that the UGC ad pipeline was missing: how to define personas before writing a script. The core reframe: a persona is motivation + desire + fear + belief — not a demographic. Demographics tell you who's in the room; they never explain why anyone acts. The data already lives in sales call transcripts. Mine 10, extract exact language, find 3–4 repeating motivations. Those become your creative directions, with desire in the hook, fear in the body, and the pre-existing belief acknowledged before reframing. This post connects the [[ICP Avatar]] framework (developed for outbound copy by SalesCaptain) to the Facebook ads creative layer — confirming that the same principles govern ad copy and cold email copy.
 

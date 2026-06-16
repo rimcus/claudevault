@@ -8,7 +8,7 @@ updated: 2026-04-14
 
 *Content catalog. Updated on every ingest. Read this first when answering queries — find relevant pages, then drill in.*
 
-**Total pages:** 98 | **Sources ingested:** 19 | **Last updated:** 2026-06-16
+**Total pages:** 99 | **Sources ingested:** 20 | **Last updated:** 2026-06-16
 
 ---
 
@@ -35,6 +35,7 @@ One page per ingested source. Links to raw file in `raw/sources/`.
 - [[sources/codyschneider-ai-search-seo|Stop Overcomplicating This: AI Search Is Just SEO]] — Cody Schneider post: two-lever framework (rank page 1-3 for comparison keywords + acquire AI citations via PromptWatch + Instantly); the tactical spec for the SEO agent
 - [[sources/codyschneider-fb-ads-ugc-playbook|Facebook Ads for SaaS 101]] — Cody Schneider post: Perplexity + Reddit quotes → Claude scripts → HeyGen/Seedance/Veo3 video → click campaign (7 days) → conversion campaign; Business Page Admin targeting; GTM conversion tracking detail
 - [[sources/codyschneider-transcript-personas|Transcript-Based Personas for Facebook Ads]] — Cody Schneider post: persona = motivation + desire + fear + belief (not demographic); transcripts are where all of this already lives; desire → hook, fear → body, belief → agreement before reframe; 10 transcripts yield 3–4 repeating personas
+- [[sources/codyschneider-andromeda-b2b-facebook|Facebook Ads Andromeda Update: Best Thing for B2B SaaS in 5 Years]] — Cody Schneider post: Andromeda killed audience-first targeting; creative IS targeting now; two inputs only: creative packs + clean pixel/CAPI; moat shifted to persona definitions + creative volume + data infra; explains the "why" behind the entire Schneider FB ads stack
 
 ---
 

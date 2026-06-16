@@ -4,7 +4,7 @@ type: concept
 tags: [advertising, ugc, ai-video, facebook-ads, content-generation]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [codyschneider-ai-ugc-ads, codyschneider-fb-ads-ugc-playbook, codyschneider-transcript-personas]
+sources: [codyschneider-ai-ugc-ads, codyschneider-fb-ads-ugc-playbook, codyschneider-transcript-personas, codyschneider-andromeda-b2b-facebook]
 ---
 
 # AI UGC Ads
@@ -29,6 +29,18 @@ Reddit (pain points) → [Exa AI scrape]
     → Graphed + PostHog + Stripe (measure CLV)
     → Remix winners
 ```
+
+## Why Creative IS Targeting: The Andromeda Foundation
+
+[[sources/codyschneider-andromeda-b2b-facebook]] (June 2026) provides the theoretical basis for the entire creative-volume approach. Meta's Andromeda algorithm update killed audience-first targeting. The algorithm now reads your creative and landing page, predicts who will convert from behavioral signals, and finds them — the marketer no longer specifies the audience. The creative specifies it implicitly.
+
+**Implications for the UGC pipeline:**
+- Each creative finds a different cohort of converters — one ad reaching one audience does not scale
+- Creative packs (10+/week) are how you reach multiple buyer personas simultaneously
+- This is why broad targeting ("target all of Facebook") works: Andromeda does the audience-finding
+- Clean conversion events (signup + payment) are the signal that teaches the algorithm what "high intent" looks like
+
+The moat moved from media-buying tricks to: **persona definitions + creative volume + data infrastructure.** All three are what the UGC pipeline produces.
 
 ## Why 100+ Variations Matters
 

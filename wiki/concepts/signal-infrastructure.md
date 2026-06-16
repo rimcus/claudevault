@@ -4,7 +4,7 @@ type: concept
 tags: [gtm, data, signals, intent, infrastructure, targeting]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook]
+sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook, codyschneider-andromeda-b2b-facebook]
 ---
 
 # Signal Infrastructure
@@ -64,6 +64,16 @@ Signal fires (hiring trigger, site visit, intent data)
 
 The key: the routing happens automatically at signal time. No human has to see the lead before it enters the right campaign.
 
+## Signal Infrastructure for Paid Ads: The Andromeda Layer
+
+[[sources/codyschneider-andromeda-b2b-facebook]] extends signal infrastructure into the Facebook ads context. Meta's Andromeda algorithm treats your conversion data as the signal layer — the same "no garbage in, no garbage out" principle that governs GTM agent data warehouses applies to ad platforms:
+
+- **Clean pixel:** correctly fires on real user actions
+- **Conversion API (CAPI):** server-side tracking that bypasses browser limitations
+- **Real conversion events:** signup and payment — not proxy events like page views
+
+The algorithm learns from these signals to find future converters. Bad signal data corrupts this learning loop the same way bad warehouse data corrupts GTM agent decisions. The "clean data layer" principle applies equally to internal AI agents and external ad platforms.
+
 ## Relation to "The List is the Strategy"
 
 Signal infrastructure is what makes "the list" actually strategic. A static list is a guess about who might buy. A signal-triggered list is real-time evidence of who is showing buying behavior now.
@@ -72,6 +82,7 @@ Signal infrastructure is what makes "the list" actually strategic. A static list
 
 - [[sources/alexvacca-gtm-engineering-hire]] — primary source (intent/firmographic signals)
 - [[sources/salescaptain-linkedin-outbound-playbook]] — LinkedIn-specific signal map (7 workflows)
+- [[sources/codyschneider-andromeda-b2b-facebook]] — paid ads signal layer: clean pixel + CAPI + real conversion events; same "no garbage in" principle applied to Meta's algorithm
 - [[GTM Engineering]] — the practice signal infrastructure enables
 - [[Content Outbound Flywheel]] — the strategic system these signals feed
 - [[Enrichment Waterfall]] — what happens to a lead after the signal fires
