@@ -4,7 +4,7 @@ type: concept
 tags: [advertising, ugc, ai-video, facebook-ads, content-generation]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [codyschneider-ai-ugc-ads]
+sources: [codyschneider-ai-ugc-ads, codyschneider-fb-ads-ugc-playbook]
 ---
 
 # AI UGC Ads
@@ -42,11 +42,28 @@ Optimizing for Return on Ad Spend can surface ads that get cheap clicks but attr
 
 Build dedicated landing pages for winning ads. Message-to-page match (the ad's specific pain point is addressed on the landing page) dramatically improves conversion rates.
 
+## Detailed Execution (June 2026 Update)
+
+From [[sources/codyschneider-fb-ads-ugc-playbook]], the full tactical detail:
+
+**Research:** Use Perplexity to search "pain points [x person] has for [y thing] that my [z product] solves reddit," then follow up for "exact quotes." This surfaces verbatim Reddit language — the raw input for scripts that sound like real customers.
+
+**Video tools:** [[HeyGen]] (original), plus now [[Seedance]] and [[Veo3]] (Google) as alternatives.
+
+**Audience targeting:** Facebook Business Page Admins — high-signal B2B proxy for small business decision-makers.
+
+**Campaign phasing:** Start with a **click campaign** (7 days, all creatives simultaneously). Promote winners to a **conversion campaign** with signup + payment events. This lets the algorithm find signal cheaply before committing spend to conversion optimization.
+
+**Tracking stack:** Custom event → data layer → Google Tag Manager → Facebook. Community warning: misfiring conversion events cause half of apparent "creative fatigue" — check the pixel before killing a winner.
+
 ## See Also
 
-- [[sources/codyschneider-ai-ugc-ads]] — the source pipeline
+- [[sources/codyschneider-ai-ugc-ads]] — the original pipeline source (Exa + CLV measurement)
+- [[sources/codyschneider-fb-ads-ugc-playbook]] — the execution detail (Perplexity research, targeting, click→conversion phasing, GTM tracking)
 - [[GTM Engineering]] — the practice context
 - [[Growth Loop]] — the feedback cycle that improves the ads over time
-- [[HeyGen]] — the video generation tool
+- [[HeyGen]] — AI avatar video generation (original tool)
+- [[Seedance]] — AI video generation alternative
+- [[Veo3]] — Google's AI video generation model
 - [[Graphed]] — the analytics layer
 - [[Cody Schneider]] — defined this pipeline

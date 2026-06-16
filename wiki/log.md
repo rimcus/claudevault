@@ -14,6 +14,21 @@ grep "^## \[" wiki/log.md | head -10
 
 ---
 
+## [2026-06-16] ingest | Post by @codyschneider — Facebook Ads for SaaS 101
+
+- Summary page: [[sources/codyschneider-fb-ads-ugc-playbook]]
+- Raw source: `raw/sources/Post by @codyschneider on X 4.md`
+- Pages created:
+  - [[sources/codyschneider-fb-ads-ugc-playbook]]
+  - [[entities/seedance]]
+  - [[entities/veo3]]
+- Pages updated:
+  - [[concepts/ai-ugc-ads]] (added Perplexity+Reddit research step; Business Page Admin targeting; click→conversion campaign phasing; GTM tracking stack; Seedance and Veo3 as HeyGen alternatives)
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: The UGC ad creative pipeline now has a complete research-to-publish spec. Perplexity + Reddit exact quotes eliminate the brand-copy problem at the research stage. Campaign structure is click-first (7 days) to identify winners cheaply, then convert — and misfiring pixels are the most common cause of apparent "creative fatigue." Three video generation options now in the wiki: HeyGen, Seedance, Veo3.
+
+---
+
 ## [2026-06-16] ingest | Post by @codyschneider — AI Search Is Just SEO
 
 - Summary page: [[sources/codyschneider-ai-search-seo]]

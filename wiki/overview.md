@@ -19,13 +19,13 @@ This vault is a personal knowledge base built on [[Andrej Karpathy]]'s [[LLM-Mai
 
 ## Current State of Knowledge
 
-**Sources ingested:** 17
-**Wiki pages:** 94
+**Sources ingested:** 18
+**Wiki pages:** 97
 **Last activity:** 2026-06-16
 
 ## The Emerging Synthesis
 
-Seventeen sources now form a coherent, layered picture of AI-powered GTM:
+Eighteen sources now form a coherent, layered picture of AI-powered GTM:
 
 1. **[[sources/karpathy-llm-wiki-pattern|Karpathy]]** provides the methodology: LLMs should maintain persistent, compounding knowledge structures rather than re-deriving answers from scratch. This vault is the instantiation.
 
@@ -52,6 +52,8 @@ Seventeen sources now form a coherent, layered picture of AI-powered GTM:
 12. **[[sources/nickabraham-claude-code-campaign-lists|Nick Abraham thread]]** validates Claude Code + MCP as a live operational tool at scale: 15+ concurrent campaigns, list management from 5hrs → 2hrs/week, org hierarchy intelligence, and the key architectural insight: *the MCP quality is the ceiling on Claude Code capability, not the LLM.*
 
 13. **[[sources/codyschneider-email-generation-agent|Schneider — Email Generation Agent]]** adds a zero-cost enrichment path: generate email patterns from LinkedIn + mailtester.ninja existence check + MillionVerifier validation. Critical caveat: unreliable on 30–40% of domains that are catch-alls.
+
+18. **[[sources/codyschneider-fb-ads-ugc-playbook|Schneider — Facebook Ads for SaaS 101]]** (June 2026) provides the granular execution detail missing from the earlier paid ads and UGC ad posts. The novel elements: Perplexity as a Reddit pain-point research tool (search "pain points X person has for Y thing my Z product solves reddit" → extract exact quotes → Claude scripts), Business Page Admin targeting as a B2B proxy on Facebook, and the click-first→conversion-campaign phasing (7 days cheap signal, then commit spend). Also adds [[Seedance]] and [[Veo3]] as alternatives to [[HeyGen]] for video generation. The Facebook Ads agent now has a complete tactical spec across three posts.
 
 17. **[[sources/codyschneider-ai-search-seo|Schneider — AI Search Is Just SEO]]** (June 2026) closes the loop on the SEO agent's tactical spec. The reframe: AI search is not a new discipline — two levers only. Lever 1: rank page 1–3 for comparison keywords ("best X for Y," "X alternative," etc.) → AI search pulls traffic from those pages. Lever 2: acquire citations from sources AI platforms already trust, mapped via [[PromptWatch]] and acquired via cold email ([[Instantly]]). Priority-stack citations by frequency — a small number of sources dominate citation share in each category. Introduces [[AI Search SEO]] as a concept and [[PromptWatch]] as a new entity.
 

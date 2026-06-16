@@ -8,7 +8,7 @@ updated: 2026-04-14
 
 *Content catalog. Updated on every ingest. Read this first when answering queries — find relevant pages, then drill in.*
 
-**Total pages:** 94 | **Sources ingested:** 17 | **Last updated:** 2026-06-16
+**Total pages:** 97 | **Sources ingested:** 18 | **Last updated:** 2026-06-16
 
 ---
 
@@ -33,6 +33,7 @@ One page per ingested source. Links to raw file in `raw/sources/`.
 - [[sources/codyschneider-paid-ads-playbook|Stop Overcomplicating Paid Ads for SaaS]] — Cody Schneider post: Google (bottom-of-funnel phrase match) + Facebook (10 creatives/week, isolate winners) + CLV-based measurement; the tactical spec for the paid ads GTM agents
 - [[sources/theory-fb-ads-library-claude-saas|[METHOD] FB Ads Library + Claude = $$$]] — BlackHatWorld practitioner post: Facebook Ads Library → Claude scoring → Lovable-ready prompt → MVP in ~10 days; £2,950 MRR across 6 tools; the market-validation-first build methodology
 - [[sources/codyschneider-ai-search-seo|Stop Overcomplicating This: AI Search Is Just SEO]] — Cody Schneider post: two-lever framework (rank page 1-3 for comparison keywords + acquire AI citations via PromptWatch + Instantly); the tactical spec for the SEO agent
+- [[sources/codyschneider-fb-ads-ugc-playbook|Facebook Ads for SaaS 101]] — Cody Schneider post: Perplexity + Reddit quotes → Claude scripts → HeyGen/Seedance/Veo3 video → click campaign (7 days) → conversion campaign; Business Page Admin targeting; GTM conversion tracking detail
 
 ---
 
@@ -109,6 +110,8 @@ People, tools, organizations.
 - [[entities/lovable|Lovable]] — AI app builder; generates 75–80% of a full-stack SaaS MVP from a single Claude-written prompt in one session
 - [[entities/higgsfield|Higgsfield]] — MCP connector for image generation and structured visual output; enriches Claude prompts before passing to Lovable
 - [[entities/promptwatch|PromptWatch]] — citation intelligence tool; identifies which sources AI search platforms use for a given category of queries
+- [[entities/seedance|Seedance]] — AI video generation tool; alternative to HeyGen for UGC-style ad production
+- [[entities/veo3|Veo3]] — Google's AI video generation model; used in the UGC ad pipeline alongside HeyGen and Seedance
 
 ---
 
