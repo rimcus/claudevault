@@ -4,7 +4,7 @@ type: concept
 tags: [gtm, icp, copy, outbound, targeting, saas]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [salescaptain-claude-code-gtm-playbook, codyschneider-transcript-personas]
+sources: [salescaptain-claude-code-gtm-playbook, codyschneider-transcript-personas, codyschneider-tam-mapping]
 ---
 
 # ICP Avatar
@@ -37,6 +37,17 @@ The identity-level pain is where deals actually close. Surface pain gets you not
 - G2 / Capterra reviews
 - Lost deal notes
 - Onboarding calls
+
+## The Machine-Sortable ICP (Schneider, June 2026)
+
+[[sources/codyschneider-tam-mapping]] extends the ICP Avatar requirement into account-level TAM filtering with a specific constraint: **the ICP definition must be specific enough that a machine could sort accounts with it.**
+
+The rule: define ICP in variables, not vibes.
+
+- **Vibe:** "Growing SaaS company in North America with a sales team"
+- **Variable set:** "SaaS, 50–200 employees, using Salesforce, hiring ≥2 AEs, no enterprise contract in play, running paid media"
+
+The variable-set ICP is Step 1 of [[TAM Mapping]]. Every variable becomes a filter that an AI or enrichment tool can apply at scale across thousands of accounts. The ICP Avatar (pain hierarchy, customer quotes) governs *message* construction. The machine-sortable ICP governs *account* selection. Both are required.
 
 ## The Advertising-Specific Persona (Schneider, June 2026)
 

@@ -14,6 +14,25 @@ grep "^## \[" wiki/log.md | head -10
 
 ---
 
+## [2026-06-24] ingest | Post by @codyschneider — TAM Mapping Playbook
+
+- Summary page: [[sources/codyschneider-tam-mapping]]
+- Raw source: renamed to `raw/sources/codyschneider-tam-mapping.md` (original filename too long for git)
+- Pages created:
+  - [[sources/codyschneider-tam-mapping]]
+  - [[concepts/tam-mapping]]
+  - [[entities/leadmagic]]
+  - [[entities/prospeo]]
+  - [[entities/pdl]]
+- Pages updated:
+  - [[concepts/signal-infrastructure]] (added "signals need a base map" prerequisite section; signals are noise without TAM)
+  - [[concepts/enrichment-waterfall]] (added TAM enrichment context; LeadMagic, Prospeo, PDL named; AI soft-qualifier research track noted)
+  - [[concepts/icp-avatar]] (added machine-sortable ICP variables as Step 1 of TAM mapping; vibe vs. variable set distinction)
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: TAM is a list, not a number. The 5-step process (ICP variables → universe pull → enrich + qualify → tier → layer signals) produces a living asset that all GTM motion runs on. The critical insight: signal infrastructure only works if signals land on accounts you already wanted — the TAM map is the prerequisite that makes signals actionable. Without it, you're running good intelligence on bad targeting.
+
+---
+
 ## [2026-06-16] ingest | Post by @codyschneider — Facebook Ads Andromeda Update
 
 - Summary page: [[sources/codyschneider-andromeda-b2b-facebook]]

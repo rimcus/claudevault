@@ -8,7 +8,7 @@ updated: 2026-04-14
 
 *Content catalog. Updated on every ingest. Read this first when answering queries — find relevant pages, then drill in.*
 
-**Total pages:** 99 | **Sources ingested:** 20 | **Last updated:** 2026-06-16
+**Total pages:** 104 | **Sources ingested:** 21 | **Last updated:** 2026-06-24
 
 ---
 
@@ -36,6 +36,7 @@ One page per ingested source. Links to raw file in `raw/sources/`.
 - [[sources/codyschneider-fb-ads-ugc-playbook|Facebook Ads for SaaS 101]] — Cody Schneider post: Perplexity + Reddit quotes → Claude scripts → HeyGen/Seedance/Veo3 video → click campaign (7 days) → conversion campaign; Business Page Admin targeting; GTM conversion tracking detail
 - [[sources/codyschneider-transcript-personas|Transcript-Based Personas for Facebook Ads]] — Cody Schneider post: persona = motivation + desire + fear + belief (not demographic); transcripts are where all of this already lives; desire → hook, fear → body, belief → agreement before reframe; 10 transcripts yield 3–4 repeating personas
 - [[sources/codyschneider-andromeda-b2b-facebook|Facebook Ads Andromeda Update: Best Thing for B2B SaaS in 5 Years]] — Cody Schneider post: Andromeda killed audience-first targeting; creative IS targeting now; two inputs only: creative packs + clean pixel/CAPI; moat shifted to persona definitions + creative volume + data infra; explains the "why" behind the entire Schneider FB ads stack
+- [[sources/codyschneider-tam-mapping|TAM Mapping: The Highest-Leverage Thing in B2B Right Now]] — Cody Schneider post: TAM is a list (named accounts, enriched, tiered) not a slide number; 5-step process; signals are noise without the base map; introduces LeadMagic, Prospeo, PDL; tiering drives effort routing (Tier 1 human, Tier 3 automated)
 
 ---
 
@@ -66,6 +67,7 @@ Topic and idea pages.
 - [[concepts/cold-email-copywriting|Cold Email Copywriting]] — Meat/Potatoes/Toppings framework; 4 personalization scenarios; Spin Tax Rule; Loom video strategy; subject line psychology
 - [[concepts/ad-library-market-validation|Ad Library Market Validation]] — using Facebook Ads Library ad longevity as demand proof before building; Claude scores for SaaS recurring potential; Lovable builds the MVP; ~10 days idea-to-MRR
 - [[concepts/ai-search-seo|AI Search SEO]] — AI search is just SEO with two levers: rank page 1-3 for comparison keywords, and acquire citations from sources AI search already trusts; PromptWatch maps the citation landscape
+- [[concepts/tam-mapping|TAM Mapping]] — bottoms-up named account database as the living GTM asset all campaigns run on; 5-step process (ICP variables → universe pull → enrich → tier → signals); prerequisite for signal infrastructure
 
 ---
 
@@ -112,6 +114,9 @@ People, tools, organizations.
 - [[entities/lovable|Lovable]] — AI app builder; generates 75–80% of a full-stack SaaS MVP from a single Claude-written prompt in one session
 - [[entities/higgsfield|Higgsfield]] — MCP connector for image generation and structured visual output; enriches Claude prompts before passing to Lovable
 - [[entities/promptwatch|PromptWatch]] — citation intelligence tool; identifies which sources AI search platforms use for a given category of queries
+- [[entities/leadmagic|LeadMagic]] — B2B enrichment provider; 2nd-pass in SalesCaptain waterfall; part of Schneider's TAM enrichment stack
+- [[entities/prospeo|Prospeo]] — B2B email enrichment provider; appears in Vacca and Schneider enrichment stacks
+- [[entities/pdl|PDL (People Data Labs)]] — large-scale B2B data provider; firmographics + contacts for high-volume TAM builds
 - [[entities/seedance|Seedance]] — AI video generation tool; alternative to HeyGen for UGC-style ad production
 - [[entities/veo3|Veo3]] — Google's AI video generation model; used in the UGC ad pipeline alongside HeyGen and Seedance
 

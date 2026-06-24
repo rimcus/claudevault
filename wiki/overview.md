@@ -19,13 +19,13 @@ This vault is a personal knowledge base built on [[Andrej Karpathy]]'s [[LLM-Mai
 
 ## Current State of Knowledge
 
-**Sources ingested:** 20
-**Wiki pages:** 99
-**Last activity:** 2026-06-16
+**Sources ingested:** 21
+**Wiki pages:** 104
+**Last activity:** 2026-06-24
 
 ## The Emerging Synthesis
 
-Twenty sources now form a coherent, layered picture of AI-powered GTM:
+Twenty-one sources now form a coherent, layered picture of AI-powered GTM:
 
 1. **[[sources/karpathy-llm-wiki-pattern|Karpathy]]** provides the methodology: LLMs should maintain persistent, compounding knowledge structures rather than re-deriving answers from scratch. This vault is the instantiation.
 
@@ -52,6 +52,8 @@ Twenty sources now form a coherent, layered picture of AI-powered GTM:
 12. **[[sources/nickabraham-claude-code-campaign-lists|Nick Abraham thread]]** validates Claude Code + MCP as a live operational tool at scale: 15+ concurrent campaigns, list management from 5hrs → 2hrs/week, org hierarchy intelligence, and the key architectural insight: *the MCP quality is the ceiling on Claude Code capability, not the LLM.*
 
 13. **[[sources/codyschneider-email-generation-agent|Schneider — Email Generation Agent]]** adds a zero-cost enrichment path: generate email patterns from LinkedIn + mailtester.ninja existence check + MillionVerifier validation. Critical caveat: unreliable on 30–40% of domains that are catch-alls.
+
+21. **[[sources/codyschneider-tam-mapping|Schneider — TAM Mapping Playbook]]** (June 2026) is the foundational infrastructure post — the layer that sits beneath all outbound, ads, and signal work. TAM is not a number; it's a named account database (bottoms-up, enriched, tiered) that is the living asset all GTM sits on. The five-step process: (1) ICP in machine-sortable variables, (2) over-pull the universe (Crunchbase, BuiltWith, Apollo), (3) enrich contacts via waterfall (LeadMagic, Prospeo, PDL, Findymail) and qualify soft signals via AI research, (4) tier 1/2/3 on fit, (5) layer live signals on top. The critical insight: **signals are noise without a base map.** Signal infrastructure is only as good as the TAM map it fires onto. This post retroactively explains why most teams running intent signals get poor results — they're chasing triggers without first controlling the target account universe. Introduces TAM Mapping as a new concept and LeadMagic, Prospeo, PDL as new entities.
 
 20. **[[sources/codyschneider-andromeda-b2b-facebook|Schneider — Andromeda & B2B Facebook Ads]]** (June 2026) is the theoretical capstone for the entire Schneider paid ads stack. Meta's Andromeda algorithm killed audience-first targeting — the algo now reads creative + landing page, predicts converters from behavioral signals, and finds them. For B2B, this removes the channel's historical limitation (can't target niche professional audiences) and turns creative into the targeting mechanism. The two inputs that now matter: (1) creative packs — multiple angles to reach multiple buyer cohorts simultaneously, and (2) clean signal data — pixel + Conversion API + real conversion events (signup, payment). The moat shifted from media-buying tricks to persona definitions + creative volume + data infrastructure. This post explains *why* the other Schneider Facebook posts recommend what they recommend.
 

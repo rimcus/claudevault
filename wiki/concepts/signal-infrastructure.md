@@ -4,7 +4,7 @@ type: concept
 tags: [gtm, data, signals, intent, infrastructure, targeting]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook, codyschneider-andromeda-b2b-facebook]
+sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook, codyschneider-andromeda-b2b-facebook, codyschneider-tam-mapping]
 ---
 
 # Signal Infrastructure
@@ -64,6 +64,21 @@ Signal fires (hiring trigger, site visit, intent data)
 
 The key: the routing happens automatically at signal time. No human has to see the lead before it enters the right campaign.
 
+## The Missing Prerequisite: The TAM Base Map
+
+[[sources/codyschneider-tam-mapping]] (June 2026) identifies the most common signal infrastructure failure mode: signals fire onto unqualified accounts.
+
+> "a signal is noise until it lands on an account you already wanted"
+
+Without a [[TAM Mapping|TAM map]] — a tiered, enriched, named account database — a signal ("company X got funded") has no context. You don't know if the company fits your ICP, what tier it is, or which sequence it should route to. The signal is noise.
+
+**With the TAM map:**
+- Signals fire onto accounts you already know you want
+- Routing is automatic: "Tier 1 account just got funded → route to Tier 1 sequence"
+- No human triage required per signal
+
+**The sequence:** build the map first → layer signals on top. Signal infrastructure deployed without a TAM map is spending on intelligence you can't act on.
+
 ## Signal Infrastructure for Paid Ads: The Andromeda Layer
 
 [[sources/codyschneider-andromeda-b2b-facebook]] extends signal infrastructure into the Facebook ads context. Meta's Andromeda algorithm treats your conversion data as the signal layer — the same "no garbage in, no garbage out" principle that governs GTM agent data warehouses applies to ad platforms:
@@ -82,7 +97,9 @@ Signal infrastructure is what makes "the list" actually strategic. A static list
 
 - [[sources/alexvacca-gtm-engineering-hire]] — primary source (intent/firmographic signals)
 - [[sources/salescaptain-linkedin-outbound-playbook]] — LinkedIn-specific signal map (7 workflows)
-- [[sources/codyschneider-andromeda-b2b-facebook]] — paid ads signal layer: clean pixel + CAPI + real conversion events; same "no garbage in" principle applied to Meta's algorithm
+- [[sources/codyschneider-andromeda-b2b-facebook]] — paid ads signal layer: clean pixel + CAPI + real conversion events
+- [[sources/codyschneider-tam-mapping]] — TAM map as prerequisite; signals are noise without a base map
+- [[TAM Mapping]] — the foundational layer that signals run on top of
 - [[GTM Engineering]] — the practice signal infrastructure enables
 - [[Content Outbound Flywheel]] — the strategic system these signals feed
 - [[Enrichment Waterfall]] — what happens to a lead after the signal fires
