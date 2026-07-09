@@ -14,6 +14,24 @@ grep "^## \[" wiki/log.md | head -10
 
 ---
 
+## [2026-07-08] ingest | Nick Abraham — LinkedIn InMail List Pipeline
+
+- Summary page: [[sources/nickabraham-linkedin-inmail-pipeline]]
+- Raw source: renamed to `raw/sources/nickabraham-linkedin-inmail-pipeline.md` (original filename too long for git)
+- Pages created:
+  - [[sources/nickabraham-linkedin-inmail-pipeline]]
+  - [[concepts/linkedin-inmail-pipeline]]
+  - [[entities/getleads]]
+  - [[entities/netnut]]
+- Pages updated:
+  - [[entities/nick-abraham]] (added InMail scale: 250K+/month; second source; key claims table expanded)
+  - [[entities/apify]] (added second use case: active user filter for InMail; 30-60 day activity check)
+  - [[concepts/signal-infrastructure]] (added LinkedIn activity behavioral signal layer; active user filter in send list context)
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: LinkedIn gives 50 paid InMail credits/license/month. If the paid balance hits zero, LinkedIn freezes all sends including the free Open Profile tier. At 250K InMails/month, list quality is existential — even 3-5 non-open profiles per day drains the balance in a week. The 5-step pipeline (GetLeads → NetNut open-profile split → Apify active-user filter → AI ICP validation → segment-then-sequence) is the protection layer. The critical nuance: open-profile status is not permanent, so the sequencer must recheck at send time. Sequencer choice is a functional requirement, not a preference. Sales Nav lists run 30-40% open profiles vs. 5-8% for standard databases — a meaningful channel-specific sourcing advantage.
+
+---
+
 ## [2026-06-24] ingest | Post by @codyschneider — TAM Mapping Playbook
 
 - Summary page: [[sources/codyschneider-tam-mapping]]

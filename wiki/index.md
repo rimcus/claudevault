@@ -8,7 +8,7 @@ updated: 2026-04-14
 
 *Content catalog. Updated on every ingest. Read this first when answering queries — find relevant pages, then drill in.*
 
-**Total pages:** 104 | **Sources ingested:** 21 | **Last updated:** 2026-06-24
+**Total pages:** 109 | **Sources ingested:** 22 | **Last updated:** 2026-07-09
 
 ---
 
@@ -37,6 +37,7 @@ One page per ingested source. Links to raw file in `raw/sources/`.
 - [[sources/codyschneider-transcript-personas|Transcript-Based Personas for Facebook Ads]] — Cody Schneider post: persona = motivation + desire + fear + belief (not demographic); transcripts are where all of this already lives; desire → hook, fear → body, belief → agreement before reframe; 10 transcripts yield 3–4 repeating personas
 - [[sources/codyschneider-andromeda-b2b-facebook|Facebook Ads Andromeda Update: Best Thing for B2B SaaS in 5 Years]] — Cody Schneider post: Andromeda killed audience-first targeting; creative IS targeting now; two inputs only: creative packs + clean pixel/CAPI; moat shifted to persona definitions + creative volume + data infra; explains the "why" behind the entire Schneider FB ads stack
 - [[sources/codyschneider-tam-mapping|TAM Mapping: The Highest-Leverage Thing in B2B Right Now]] — Cody Schneider post: TAM is a list (named accounts, enriched, tiered) not a slide number; 5-step process; signals are noise without the base map; introduces LeadMagic, Prospeo, PDL; tiering drives effort routing (Tier 1 human, Tier 3 automated)
+- [[sources/nickabraham-linkedin-inmail-pipeline|Nick Abraham — LinkedIn InMail List Pipeline]] — Nick Abraham thread: 250K+ InMails/month; 5-step protection pipeline (GetLeads → NetNut → Apify → AI ICP → sequencer); 50 paid credits/license, credit freeze cascade; open-profile density: 5-8% standard vs. 30-40% Sales Nav; sequencer must recheck open status at send time
 
 ---
 
@@ -68,6 +69,7 @@ Topic and idea pages.
 - [[concepts/ad-library-market-validation|Ad Library Market Validation]] — using Facebook Ads Library ad longevity as demand proof before building; Claude scores for SaaS recurring potential; Lovable builds the MVP; ~10 days idea-to-MRR
 - [[concepts/ai-search-seo|AI Search SEO]] — AI search is just SEO with two levers: rank page 1-3 for comparison keywords, and acquire citations from sources AI search already trusts; PromptWatch maps the citation landscape
 - [[concepts/tam-mapping|TAM Mapping]] — bottoms-up named account database as the living GTM asset all campaigns run on; 5-step process (ICP variables → universe pull → enrich → tier → signals); prerequisite for signal infrastructure
+- [[concepts/linkedin-inmail-pipeline|LinkedIn InMail Pipeline]] — infrastructure for LinkedIn InMail at scale; credit mechanics, open-profile segmentation (NetNut), active-user filter (Apify), ICP validation, sequencer real-time status check requirement
 
 ---
 
@@ -119,6 +121,8 @@ People, tools, organizations.
 - [[entities/pdl|PDL (People Data Labs)]] — large-scale B2B data provider; firmographics + contacts for high-volume TAM builds
 - [[entities/seedance|Seedance]] — AI video generation tool; alternative to HeyGen for UGC-style ad production
 - [[entities/veo3|Veo3]] — Google's AI video generation model; used in the UGC ad pipeline alongside HeyGen and Seedance
+- [[entities/getleads|GetLeads]] — LinkedIn list building tool; only LinkedIn URL required for InMail pipeline; Step 1 in Abraham's InMail system
+- [[entities/netnut|NetNut]] — LinkedIn enrichment API; flags open-profile status per URL; the segmentation gate that prevents paid credit burn
 
 ---
 

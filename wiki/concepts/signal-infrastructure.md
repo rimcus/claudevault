@@ -79,6 +79,19 @@ Without a [[TAM Mapping|TAM map]] — a tiered, enriched, named account database
 
 **The sequence:** build the map first → layer signals on top. Signal infrastructure deployed without a TAM map is spending on intelligence you can't act on.
 
+## LinkedIn Activity as a Send-List Signal (Abraham, July 2026)
+
+[[sources/nickabraham-linkedin-inmail-pipeline]] extends signal infrastructure into a third context: list hygiene before LinkedIn InMail sends.
+
+[[Nick Abraham]] uses [[Apify]] to filter contact lists for prospects who posted or commented on LinkedIn in the last 30–60 days before loading them into the InMail sequencer. This is a behavioral signal — recent LinkedIn activity predicts message visibility and response rate — applied not to account selection (the TAM layer) but to send-list qualification (the channel layer).
+
+The pattern mirrors the broader signal logic:
+- **Account-level signals** (intent data, hiring triggers) tell you *which accounts* to target
+- **Contact-level signals** (LinkedIn activity) tell you *which contacts on those accounts* to reach right now
+- **Platform-specific signals** (open-profile status) tell you *how* to route each contact within the channel
+
+All three are signal types. The [[LinkedIn InMail Pipeline]] uses all three together.
+
 ## Signal Infrastructure for Paid Ads: The Andromeda Layer
 
 [[sources/codyschneider-andromeda-b2b-facebook]] extends signal infrastructure into the Facebook ads context. Meta's Andromeda algorithm treats your conversion data as the signal layer — the same "no garbage in, no garbage out" principle that governs GTM agent data warehouses applies to ad platforms:
@@ -98,8 +111,10 @@ Signal infrastructure is what makes "the list" actually strategic. A static list
 - [[sources/alexvacca-gtm-engineering-hire]] — primary source (intent/firmographic signals)
 - [[sources/salescaptain-linkedin-outbound-playbook]] — LinkedIn-specific signal map (7 workflows)
 - [[sources/codyschneider-andromeda-b2b-facebook]] — paid ads signal layer: clean pixel + CAPI + real conversion events
+- [[sources/nickabraham-linkedin-inmail-pipeline]] — LinkedIn activity as a contact-level behavioral signal; open-profile status as channel-routing signal
 - [[sources/codyschneider-tam-mapping]] — TAM map as prerequisite; signals are noise without a base map
 - [[TAM Mapping]] — the foundational layer that signals run on top of
+- [[concepts/linkedin-inmail-pipeline|LinkedIn InMail Pipeline]] — applies all three signal types (account, contact, platform) in one channel pipeline
 - [[GTM Engineering]] — the practice signal infrastructure enables
 - [[Content Outbound Flywheel]] — the strategic system these signals feed
 - [[Enrichment Waterfall]] — what happens to a lead after the signal fires

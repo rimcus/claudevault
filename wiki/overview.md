@@ -19,9 +19,9 @@ This vault is a personal knowledge base built on [[Andrej Karpathy]]'s [[LLM-Mai
 
 ## Current State of Knowledge
 
-**Sources ingested:** 21
-**Wiki pages:** 104
-**Last activity:** 2026-06-24
+**Sources ingested:** 22
+**Wiki pages:** 109
+**Last activity:** 2026-07-09
 
 ## The Emerging Synthesis
 
@@ -52,6 +52,8 @@ Twenty-one sources now form a coherent, layered picture of AI-powered GTM:
 12. **[[sources/nickabraham-claude-code-campaign-lists|Nick Abraham thread]]** validates Claude Code + MCP as a live operational tool at scale: 15+ concurrent campaigns, list management from 5hrs → 2hrs/week, org hierarchy intelligence, and the key architectural insight: *the MCP quality is the ceiling on Claude Code capability, not the LLM.*
 
 13. **[[sources/codyschneider-email-generation-agent|Schneider — Email Generation Agent]]** adds a zero-cost enrichment path: generate email patterns from LinkedIn + mailtester.ninja existence check + MillionVerifier validation. Critical caveat: unreliable on 30–40% of domains that are catch-alls.
+
+22. **[[sources/nickabraham-linkedin-inmail-pipeline|Abraham — LinkedIn InMail List Pipeline]]** (July 2026) is the most operationally specific source in the wiki. At 250,000+ InMails/month, [[Nick Abraham]] documents the failure mode that most teams hit silently: LinkedIn gives 50 paid InMail credits per Sales Navigator license per month. If paid credits hit zero, LinkedIn freezes all sending — including the 400–800 free sends to Open Profiles. Three to five non-open profiles per day in the send queue burns the balance within a week. The 5-step pipeline built to prevent this: (1) pull raw list via [[GetLeads]] (LinkedIn URL only — no email or domain required), (2) run every URL through [[NetNut]] API to flag open-profile status and split into two buckets, (3) filter for contacts active on LinkedIn in the last 30–60 days via [[Apify]] (higher response rates across all channels), (4) validate ICP fit via AI qualification agent (industry, profile, role), (5) segment open vs. non-open before any sequencer load. The non-obvious insight: open-profile status is not permanent. A contact enriched as "open" today may flip to "closed" before the sequencer sends — so sequencer choice for InMail is a functional requirement: it must recheck open status at send time, not just at list-load. Sales Navigator lists run 30–40% open-profile density vs. 5–8% for standard database pulls, because Sales Nav sorts open profiles to the front of results. The pipeline logic connects to the wiki's signal infrastructure and TAM mapping frameworks: the active-user filter is behavioral signal applied at the contact level; the ICP validation step applies the machine-sortable ICP principle before committing scarce credits.
 
 21. **[[sources/codyschneider-tam-mapping|Schneider — TAM Mapping Playbook]]** (June 2026) is the foundational infrastructure post — the layer that sits beneath all outbound, ads, and signal work. TAM is not a number; it's a named account database (bottoms-up, enriched, tiered) that is the living asset all GTM sits on. The five-step process: (1) ICP in machine-sortable variables, (2) over-pull the universe (Crunchbase, BuiltWith, Apollo), (3) enrich contacts via waterfall (LeadMagic, Prospeo, PDL, Findymail) and qualify soft signals via AI research, (4) tier 1/2/3 on fit, (5) layer live signals on top. The critical insight: **signals are noise without a base map.** Signal infrastructure is only as good as the TAM map it fires onto. This post retroactively explains why most teams running intent signals get poor results — they're chasing triggers without first controlling the target account universe. Introduces TAM Mapping as a new concept and LeadMagic, Prospeo, PDL as new entities.
 
@@ -139,6 +141,7 @@ The GTM layer is increasingly automatable. The product layer remains human.
 - [[sources/salescaptain-linkedin-outbound-playbook]] — LinkedIn signal + flywheel
 - [[sources/squeezeandscale-lemlist-email-nurturing]] — lifecycle email / retention layer
 - [[sources/nickabraham-claude-code-campaign-lists]] — live MCP workflow: Claude Code for campaign list management at scale
+- [[sources/nickabraham-linkedin-inmail-pipeline]] — LinkedIn InMail list pipeline at 250K+/month; credit mechanics; open-profile segmentation; sequencer requirements
 - [[sources/codyschneider-marketing-agents-per-vertical]] — agent-per-vertical model; Airbyte + ClickHouse; self-generating skill files
 - [[GTM Engineering]] — the synthesized concept
 - [[Signal Infrastructure]] — the key differentiating layer
