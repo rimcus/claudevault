@@ -4,8 +4,8 @@ type: entity
 entity_kind: product
 tags: [tool, analytics, data-warehouse, gtm, saas]
 created: 2026-04-14
-updated: 2026-04-14
-sources: [codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, codyschneider-email-generation-agent, codyschneider-paid-ads-playbook]
+updated: 2026-08-07
+sources: [codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, codyschneider-email-generation-agent, codyschneider-paid-ads-playbook, codyschneider-ad-library-gap-analysis, codyschneider-ai-citation-loop]
 ---
 
 # Graphed
@@ -40,9 +40,19 @@ Schneider also promotes Graphed as the platform for building GTM agents beyond a
 
 In [[sources/codyschneider-paid-ads-playbook]] (June 2026), Schneider names Graphed explicitly as the recommended dashboard tool for the paid ads measurement framework — tracking CAC vs CLV vs payback period across Google Ads and Facebook Ads. The alternative he mentions is Looker Studio. This confirms Graphed's positioning as the canonical measurement layer for the full Schneider GTM stack.
 
+## Autonomous Ads Optimization Role (July 2026)
+
+In [[sources/codyschneider-ad-library-gap-analysis]], Graphed's MCP is connected directly into Claude Code as the performance-analysis step of the [[concepts/competitor-creative-gap-analysis|competitor creative gap analysis]] pipeline: one day after ads launch, Claude queries Graphed via MCP to see what's working, then calls the Facebook Ads API itself to turn off losing creative and move winners into dedicated ad sets. This is a more autonomous role than Graphed's earlier dashboard/reporting positioning — Claude reads Graphed's data and takes the optimization action directly, rather than a human reading a Graphed report and acting on it.
+
+## CLI Positioning (August 2026)
+
+In [[sources/codyschneider-ai-citation-loop]], Graphed is promoted with a new framing beyond dashboard/analytics/service: a **Graphed CLI** that deploys paid ads, cold outbound, and SEO agents together, backed by a data pipeline, data warehouse, and cloud server to host the agents — "virtual employees." This is the fourth distinct positioning of Graphed documented in this wiki (analytics dashboard → agent-building platform → forward-deployed service → CLI-deployed multi-agent runtime), tracking Schneider's own pipelines toward increasing autonomy.
+
 ## See Also
 
 - [[AI Marketing Stack]] — the stack it anchors as the analytics layer
 - [[Growth Loop]] — Graphed closes the feedback loop
 - [[Data Warehouse for AI]] — the concept Graphed instantiates
+- [[concepts/competitor-creative-gap-analysis]] — MCP-driven autonomous optimization use case
+- [[concepts/citation-shape-engineering]] — CLI positioning source
 - [[Cody Schneider]] — creator and promoter

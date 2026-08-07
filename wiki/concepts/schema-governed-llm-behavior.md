@@ -37,7 +37,13 @@ In the [[LLM-Maintained Wiki]] pattern, the schema document is the key configura
 - **AGENTS.md** — the convention for OpenAI Codex
 - Domain-specific extensions: adding domain conventions (e.g. citation formats for academic wikis, field definitions for business wikis)
 
+## Convergent Evidence: The Same Pattern in Production Engineering
+
+[[sources/maximechampoux-well-ai-native-engineering]] documents an independent, unrelated instance of this same pattern applied one layer down — not to a wiki or GTM workflow, but to a company's own production codebase. [[entities/well|Well]] moved its documentation from an external tool (Notion) directly into the codebase, and engineers turned recurring PR-review findings into reusable "skills" that get folded into a shared pipeline the moment they're discovered (see [[concepts/agent-specialization-context-window]]) — functionally the same "persistent, co-evolved, operations-oriented configuration" this concept describes, just version-controlled alongside the code it governs rather than living in a CLAUDE.md file. Worth treating as convergent evidence that this pattern generalizes beyond LLM wikis and GTM agents to AI-assisted software engineering itself.
+
 ## See Also
 
 - [[LLM-Maintained Wiki]] — the system this concept governs
 - [[Andrej Karpathy]] — described this as the "key configuration file" of the pattern
+- [[concepts/agent-specialization-context-window]] — the same pattern applied to a production codebase instead of a wiki
+- [[concepts/gtm-agents]] — the GTM-side instance: agents that write their own skill files

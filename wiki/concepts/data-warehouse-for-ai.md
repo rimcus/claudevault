@@ -66,6 +66,10 @@ This resolves the wiki's standing open question about which open-source warehous
 
 - How does the warehouse stay in sync in real time vs. batch? Lemlist does daily batch syncs into Customer.io — real-time not required for lifecycle email. For ad optimization, faster sync may matter more.
 
+## The SMB-Scale Variant (Well)
+
+[[sources/maximechampoux-well-ai-native-engineering]] applies this same "centralize scattered data so agents have real context" thesis to a segment this concept's other sources don't address: solopreneurs and small businesses who will never build (or afford) an Airbyte + ClickHouse warehouse or hire a data team. [[entities/well|Well]]'s [[concepts/business-context-graph]] is the SMB-scale equivalent — a unified data model built via an MCP-first, demand-driven connector waterfall rather than a formal ETL pipeline, aimed at giving AI agents (invoice retrieval, financial forecasting) the same kind of cross-domain context this concept describes at company scale.
+
 ## See Also
 
 - [[AI Marketing Stack]] — the broader infrastructure context
@@ -75,6 +79,8 @@ This resolves the wiki's standing open question about which open-source warehous
 - [[ClickHouse]] — the open-source warehouse layer
 - [[Cody Schneider]] — identified this as the critical enabling layer for outbound GTM agents
 - [[Lemlist]] — real-world implementation: BigQuery → Customer.io → behavioral flows
+- [[concepts/business-context-graph]] — the SMB-scale variant of this same thesis
 - [[sources/codyschneider-gtm-agents]] — Schneider's original GTM agents framework
 - [[sources/codyschneider-marketing-agents-per-vertical]] — names Airbyte + ClickHouse
 - [[sources/squeezeandscale-lemlist-email-nurturing]] — Lemlist's concrete BigQuery implementation
+- [[sources/maximechampoux-well-ai-native-engineering]] — the SMB-scale variant

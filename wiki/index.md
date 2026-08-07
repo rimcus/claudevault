@@ -8,7 +8,7 @@ updated: 2026-04-14
 
 *Content catalog. Updated on every ingest. Read this first when answering queries — find relevant pages, then drill in.*
 
-**Total pages:** 109 | **Sources ingested:** 22 | **Last updated:** 2026-07-09
+**Total pages:** 142 | **Sources ingested:** 28 | **Last updated:** 2026-08-07
 
 ---
 
@@ -38,6 +38,12 @@ One page per ingested source. Links to raw file in `raw/sources/`.
 - [[sources/codyschneider-andromeda-b2b-facebook|Facebook Ads Andromeda Update: Best Thing for B2B SaaS in 5 Years]] — Cody Schneider post: Andromeda killed audience-first targeting; creative IS targeting now; two inputs only: creative packs + clean pixel/CAPI; moat shifted to persona definitions + creative volume + data infra; explains the "why" behind the entire Schneider FB ads stack
 - [[sources/codyschneider-tam-mapping|TAM Mapping: The Highest-Leverage Thing in B2B Right Now]] — Cody Schneider post: TAM is a list (named accounts, enriched, tiered) not a slide number; 5-step process; signals are noise without the base map; introduces LeadMagic, Prospeo, PDL; tiering drives effort routing (Tier 1 human, Tier 3 automated)
 - [[sources/nickabraham-linkedin-inmail-pipeline|Nick Abraham — LinkedIn InMail List Pipeline]] — Nick Abraham thread: 250K+ InMails/month; 5-step protection pipeline (GetLeads → NetNut → Apify → AI ICP → sequencer); 50 paid credits/license, credit freeze cascade; open-profile density: 5-8% standard vs. 30-40% Sales Nav; sequencer must recheck open status at send time
+- [[sources/lukeharries-elevenlabs-growth-playbook|The $3.3B Growth Engine Behind ElevenLabs]] — Luke Harries (20VC/20 Growth podcast): full general growth-marketing playbook — sharded team structure, tiered launches (200K-700K views), video strategy, CAC:payback over CAC:LTV, no-PM product-engineer model, counter-positioning, founder brand, SEO mini-tools (1 source)
+- [[sources/codyschneider-ai-media-company-playbook|Right Now You Can Make a Media Company That Promotes Your Business]] — Cody Schneider post: three agent-run owned-media tactics used as ad-placement funnels — directory website (Hermes scrape → Claude Code build → Vercel), podcast + newsletter (interview research → ElevenLabs TTS → Transistor.fm), TikTok reel farm (DoubleSpeed AI accounts → Nano Banana slideshows)
+- [[sources/maximechampoux-well-ai-native-engineering|SaaS Connection — Maxime Champoux (Well): Building an AI-Native Engineering Org]] — Maxime Champoux (French podcast): Qonto's Toyota-Production-System engineering culture; a 12-person team's 7→100+ features/month transition; the "integration vs. assimilation" plateau and its fix (named, specialized AI agents); the Figma/code source-of-truth inversion; the reshaped Double Diamond (1 source, French)
+- [[sources/codyschneider-ad-library-gap-analysis|GTM Engineering Today: Competitor Ad Library → Gap Analysis → Autonomous Ads]] — Cody Schneider post: scrape competitor Facebook Ads Library creative → Gemini describes angle/promise/outcome → Claude finds messaging gaps → Exa AI validates via Reddit → Nano Banana + Seedance generate ads → Graphed MCP + Claude Code autonomously kill losers/scale winners → deploy to server
+- [[sources/codyschneider-seo-for-saas-101|SEO for SaaS 101]] — Cody Schneider post: named-tool version of the AI Search SEO Lever 1 pipeline (Claude Code + SEO API + Serper); novel step is folding a recorded founder perspective/interview into competitor-researched articles as the durability layer once the mechanical steps commoditize
+- [[sources/codyschneider-ai-citation-loop|Half of Winning With AI Search Is Just Writing Content AI Wants to Consume]] — Cody Schneider post: PromptWatch (find prompt gaps) → DataForSEO AI Optimization API (size + live citations across 4 models) → Codex (analyze top-cited URL structure) → Claude Code (write in that shape, FAQPage/Article schema) → CMS API publish → IndexNow/Search Console; "models retrieve chunks, not pages"
 
 ---
 
@@ -70,6 +76,29 @@ Topic and idea pages.
 - [[concepts/ai-search-seo|AI Search SEO]] — AI search is just SEO with two levers: rank page 1-3 for comparison keywords, and acquire citations from sources AI search already trusts; PromptWatch maps the citation landscape
 - [[concepts/tam-mapping|TAM Mapping]] — bottoms-up named account database as the living GTM asset all campaigns run on; 5-step process (ICP variables → universe pull → enrich → tier → signals); prerequisite for signal infrastructure
 - [[concepts/linkedin-inmail-pipeline|LinkedIn InMail Pipeline]] — infrastructure for LinkedIn InMail at scale; credit mechanics, open-profile segmentation (NetNut), active-user filter (Apify), ICP validation, sequencer real-time status check requirement
+- [[concepts/launch-playbook|Launch Playbook (Tiered)]] — 3-tier launch classification + fixed asset/distribution checklist; messaging-first discipline; 200K-700K views per major launch at ElevenLabs
+- [[concepts/growth-video-strategy|Growth Video Strategy]] — 3 video formats (motion design, founder-led, screen-share); the first-30-seconds rule; in-house vs. contractor
+- [[concepts/counter-positioning|Counter-Positioning]] — taking a competitor's positioning and using its literal opposite as your strength; Ramp vs. Brex, TBPN vs. All-In
+- [[concepts/sharded-growth-teams|Sharded Growth Teams]] — horizontal channel-specialist layer + per-product growth-lead pods; ElevenLabs' adaptation for horizontal, multi-product GTM
+- [[concepts/growth-hiring-order|Growth Hiring Order]] — generalist growth marketer → growth engineer → motion designer → channel specialists (only once a channel shows life)
+- [[concepts/cac-payback-period|CAC-to-Payback-Period]] — CAC:payback ratio over CAC:LTV; foot-on-gas heuristic; marketing-sourced SQLs as enterprise North Star
+- [[concepts/product-engineers-no-pms|Product Engineers Instead of PMs]] — engineers own the roadmap end-to-end; the "product challenge" hiring filter; ~60-70% AI-generated code at ElevenLabs
+- [[concepts/seo-mini-tools|SEO Mini-Tools ("Two Pages")]] — single-purpose engineered tools survive AI search where long-form blog content fades; doubles as the enterprise-trial mini-tool strategy
+- [[concepts/founder-brand-strategy|Founder Brand Strategy]] — match channel to founder's genuine strength; "no such thing as bad press" fails for enterprise-bound brands
+- [[concepts/ai-media-company-playbook|AI Media Company Playbook]] — a business runs its own agent-operated media property as an ad-placement funnel for its own product; umbrella for 3 tactics
+- [[concepts/directory-website-seo-play|Directory Website SEO Play]] — scrape an industry into a dataset, one-shot build a directory site with Claude Code, index and refresh monthly, run ads on it
+- [[concepts/podcast-newsletter-growth-loop|Podcast + Newsletter Growth Loop]] — agent researches how companies grew, scripts a monologue, ElevenLabs narrates it, newsletter is the ad-monetized asset
+- [[concepts/tiktok-reel-farm|TikTok Reel Farm]] — cloud-created TikTok account cohort posting AI-generated viral-format slideshows; measured by aggregate impressions/CPM
+- [[concepts/toyota-production-system-for-software|Toyota Production System for Software]] — Qonto's "Qontoway": software as assembly line, Andon-cord stop-the-line practice, zero-bugs-in-production standard
+- [[concepts/business-context-graph|Business Context Graph]] — unified SMB data model (bank, suppliers, accounting, subscriptions) via MCP-first, demand-driven connectors; Well's core architecture
+- [[concepts/ai-native-engineering-team|AI-Native Engineering Team (Everyone Codes)]] — 12-person team, 7→100+ features/month; bounded permissions + full team buy-in as the two required conditions
+- [[concepts/design-code-inversion|Design/Code Source-of-Truth Inversion]] — code leads, Figma follows; the designer's role moves downstream to polish
+- [[concepts/agent-specialization-context-window|Agent Specialization by Context Window]] — 8 named, stable, domain-specialized agents + orchestrator; fixes the "integrated but not assimilated" quality plateau; context-window capacity as the specialization trigger
+- [[concepts/marginal-gains-1-percent|1% Marginal Gains (AI-Coding Tooling)]] — Team Sky-style daily 1% tooling improvements, shared instantly via PR, compounding into large velocity gains
+- [[concepts/roadmap-abstraction-shift|Roadmap Abstraction Shift]] — Double Diamond reshaped: concept-level vision + black-box feature briefs replace detailed 4-6-week specs once specs execute in 2 hours
+- [[concepts/competitor-creative-gap-analysis|Competitor Creative Gap Analysis]] — scrape competitor ad creative, LLM-describe it, find and validate messaging gaps, generate and autonomously optimize ads inside the gap
+- [[concepts/founder-perspective-content-moat|Founder Perspective Content Moat]] — fold a recorded founder perspective/interview into otherwise mechanical, competitor-researched SEO articles; the un-synthesizable input as the durability layer
+- [[concepts/citation-shape-engineering|Citation Shape Engineering]] — reverse-engineer the structural shape of already-cited AI-search content and mechanically rewrite your own content to match it, since models retrieve chunks, not pages
 
 ---
 
@@ -78,6 +107,11 @@ Topic and idea pages.
 People, tools, organizations.
 
 ### People
+- [[entities/maxime-champoux|Maxime Champoux]] — CEO/co-founder of Well; former Head of Products at Qonto; architect of its 7→100+ features/month AI-coding transition
+- [[entities/alex-olivet|Alex Olivet]] — host of SaaS Connection; founder of Collect
+- [[entities/luke-harries|Luke Harries]] — Head of Growth at ElevenLabs; architect of its sharded growth team, launch playbook, and no-PM product-engineer model
+- [[entities/mati-staniszewski|Mati Staniszewski]] — co-founder/CEO of ElevenLabs
+- [[entities/harry-stebbings|Harry Stebbings]] — host of 20VC/20 Growth; interviewer
 - [[entities/andrej-karpathy|Andrej Karpathy]] — AI researcher; originator of the LLM wiki pattern
 - [[entities/vannevar-bush|Vannevar Bush]] — engineer; proposed the Memex (1945)
 - [[entities/cody-schneider|Cody Schneider]] — growth practitioner; author of the GTM agents blueprint
@@ -88,6 +122,10 @@ People, tools, organizations.
 ### Organizations
 - [[entities/coldiq|ColdIQ]] — GTM agency, $7M+ ARR, 400+ B2B clients, 23M+ emails; the data source behind Vacca's claims
 - [[entities/salescaptain|SalesCaptain]] — GTM agency; $1M+ LinkedIn pipeline, 79% ICP fit; implementation-focused (Claude Code + LinkedIn workflows)
+- [[entities/elevenlabs|ElevenLabs]] — AI audio company, $3.3B valuation; horizontal multi-product strategy; case study for sharded growth teams and no-PM org design; also used as a third-party TTS tool in Schneider's podcast pipeline
+- [[entities/well|Well]] — AI agent platform building a unified business context graph for SMBs; 12-person team shipping 100+ features/month
+- [[entities/qonto|Qonto]] — French neobank; Toyota-Production-System-inspired engineering culture; scaled 50→1,600 employees
+- [[entities/ibanfirst|iBanFirst]] — fintech; first Core Banking build in Champoux's career, later re-applied at Qonto in 1/5th the time
 
 ### Tools
 - [[entities/obsidian|Obsidian]] — the markdown vault app serving as the browsing interface ("the IDE") for this wiki
@@ -123,6 +161,19 @@ People, tools, organizations.
 - [[entities/veo3|Veo3]] — Google's AI video generation model; used in the UGC ad pipeline alongside HeyGen and Seedance
 - [[entities/getleads|GetLeads]] — LinkedIn list building tool; only LinkedIn URL required for InMail pipeline; Step 1 in Abraham's InMail system
 - [[entities/netnut|NetNut]] — LinkedIn enrichment API; flags open-profile status per URL; the segmentation gate that prevents paid credit burn
+- [[entities/vercel|Vercel]] — frontend hosting/deployment; publishes the agent-built directory website
+- [[entities/google-search-console|Google Search Console]] — indexing + content-gap data source for the directory website refresh cycle
+- [[entities/transistor-fm|Transistor.fm]] — podcast MP3 hosting for the agent-produced industry podcast
+- [[entities/doublespeed-ai|DoubleSpeed AI]] — creates TikTok accounts in the cloud for the reel farm cohort
+- [[entities/nano-banana|Nano Banana]] — AI image generator producing viral-format TikTok slideshows; also generates gap-filling Facebook ad creative
+- [[entities/exa-ai|Exa AI]] — AI-native search/scraping API; Twitter engager lookup, Reddit pain-point research, Reddit gap validation across three Schneider pipelines
+- [[entities/gemini|Gemini]] — Google's multimodal LLM; describes competitor ad creative (angle/promise/outcome) for gap analysis
+- [[entities/serper|Serper]] — SERP scraping API; page-1 competitive research for the SEO agent
+- [[entities/google-analytics-4|Google Analytics 4]] — conversion-event tracking, part of the GTM+GA4+GSC stack
+- [[entities/google-tag-manager|Google Tag Manager]] — tag management; custom-event tracking across the ads and SEO pipelines
+- [[entities/dataforseo|DataForSEO]] — AI Optimization API; search volume, mention counts, and live LLM citation data across 4 models
+- [[entities/codex|Codex]] — OpenAI's coding agent; fetches and structurally analyzes top-cited URLs (first non-Claude coding agent in this wiki)
+- [[entities/indexnow|IndexNow]] — instant-indexing protocol/API
 
 ---
 

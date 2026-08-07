@@ -3,8 +3,8 @@ title: "Ad Library Market Validation"
 type: concept
 tags: [market-validation, facebook-ads-library, saas, demand-proof, product-discovery]
 created: 2026-06-10
-updated: 2026-06-10
-sources: [theory-fb-ads-library-claude-saas]
+updated: 2026-07-28
+sources: [theory-fb-ads-library-claude-saas, codyschneider-ad-library-gap-analysis]
 ---
 
 # Ad Library Market Validation
@@ -56,6 +56,10 @@ Ad Library validation is the **market-level** signal; LinkedIn/Reddit signals ar
 - The "1+ week" rule is a heuristic, not a hard threshold; campaign budgets vary widely
 - Community caveat (from [[sources/codyschneider-paid-ads-playbook]]): for low-ticket SaaS, even proven demand may not yield profitable CAC at scale
 
+## A Second Use of the Same Data Source: Creative Gap-Finding (July 2026)
+
+[[sources/codyschneider-ad-library-gap-analysis]] mines the same raw data source — Facebook Ads Library — for a different purpose. This concept uses ad *longevity* as a proxy for product-market fit, to decide whether to build a product at all. [[concepts/competitor-creative-gap-analysis]] instead uses ad *content* — described at the angle/promise/outcome level by an LLM — to map how an entire category talks about itself, for a product that already exists, in order to find unclaimed positioning. Same source, two non-overlapping extraction targets: longevity (this concept) vs. message content (the other).
+
 ## See Also
 
 - [[sources/theory-fb-ads-library-claude-saas]] — the primary source demonstrating this method
@@ -64,4 +68,5 @@ Ad Library validation is the **market-level** signal; LinkedIn/Reddit signals ar
 - [[concepts/saas-lifecycle]] — the lifecycle phases this method compresses (Idea → Validation → Build → Launch)
 - [[concepts/signal-infrastructure]] — complementary signal layer (person-level vs. market-level)
 - [[concepts/ai-ugc-ads]] — also uses Facebook ad intelligence, from the advertiser side
+- [[concepts/competitor-creative-gap-analysis]] — second use of Facebook Ads Library data: creative content, not longevity
 - [[sources/codyschneider-paid-ads-playbook]] — running FB ads: what the advertisers the Library surfaces are doing
