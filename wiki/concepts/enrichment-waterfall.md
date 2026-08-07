@@ -4,7 +4,7 @@ type: concept
 tags: [gtm, data, enrichment, targeting, clay]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook]
+sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook, codyschneider-email-generation-agent, codyschneider-tam-mapping]
 ---
 
 # Enrichment Waterfall
@@ -41,6 +41,17 @@ Vacca's specific claim: campaigns built with 8–12 data points per prospect sig
 - [[FullEnrich]] — enrichment provider
 - [[Apollo]] — also used for enrichment (from Schneider's stack)
 
+## Enrichment in TAM Mapping (Schneider, June 2026)
+
+[[sources/codyschneider-tam-mapping]] adds four providers to the enrichment landscape, positioned as the contact resolution layer within full TAM building (not just per-campaign enrichment):
+
+- [[LeadMagic]] — firmographics + contacts at scale
+- [[Findymail]] — already in wiki (1st-pass email)
+- [[Prospeo]] — already referenced above
+- [[PDL]] (People Data Labs) — large-scale B2B data; firmographics + contacts for high-volume pulls
+
+Schneider also names a parallel enrichment track within TAM building: **AI research for soft qualifiers** — LLMs reading company websites and job postings to answer questions like "do they run paid media?" or "are they hiring SDRs?" This is qualitative enrichment that no data provider currently offers at scale.
+
 ## SalesCaptain's Specific Waterfall (Coverage Numbers)
 
 [[Bill Stathopoulos]] gives specific coverage numbers for a 4-step waterfall targeting email addresses:
@@ -57,8 +68,22 @@ Vacca's specific claim: campaigns built with 8–12 data points per prospect sig
 
 The validation step is distinct from enrichment: ZeroBounce doesn't find emails, it removes bad ones. Both steps are required for clean deliverability.
 
+## Zero-Cost Alternative: Generate + Verify
+
+[[Cody Schneider]] describes a zero-cost alternative to the paid first-pass: generate every plausible email pattern for a person + domain (given a LinkedIn profile), then existence-check via a cheap API (e.g., mailtester.ninja) and validate with a deliverability tool (MillionVerifier).
+
+**Trade-off vs. paid first-pass:**
+
+| Approach | Cost | Coverage | Limitation |
+|----------|------|---------|-----------|
+| Paid enrichment (Findymail) | ~$0.01–0.05/contact | ~50–60% | Paid |
+| Generate + verify | Near-zero | ~60–70% of non-catch-all domains | Fails on catch-all domains |
+
+**Critical caveat (from @MrColdEmail):** 30–40% of business domains are configured as catch-alls — any email combination returns "valid," making the existence-check step unreliable for those domains. Best suited for SMB campaigns where cost matters and enterprise catch-all domains are less common.
+
 ## See Also
 
+- [[TAM Mapping]] — the broader process enrichment sits inside; the waterfall is Step 3 of TAM building
 - [[Signal Infrastructure]] — the upstream layer that feeds the waterfall
 - [[GTM Engineering]] — the practice that uses enrichment waterfalls
 - [[Clay]] — where waterfalls are built
@@ -67,3 +92,4 @@ The validation step is distinct from enrichment: ZeroBounce doesn't find emails,
 - [[Apollo]] — 3rd-pass enrichment provider
 - [[sources/alexvacca-gtm-engineering-hire]] — Vacca's framework (8–12 data points)
 - [[sources/salescaptain-linkedin-outbound-playbook]] — SalesCaptain's waterfall with coverage numbers
+- [[sources/codyschneider-email-generation-agent]] — generate + verify as zero-cost alternative

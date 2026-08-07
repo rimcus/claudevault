@@ -4,7 +4,7 @@ type: concept
 tags: [data, infrastructure, ai-agents, gtm, decision-making]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [codyschneider-gtm-agents, squeezeandscale-lemlist-email-nurturing]
+sources: [codyschneider-gtm-agents, squeezeandscale-lemlist-email-nurturing, codyschneider-marketing-agents-per-vertical]
 ---
 
 # Data Warehouse for AI
@@ -44,17 +44,43 @@ The warehouse is the bridge between scattered business data and agent intelligen
 
 This confirms the warehouse as a **product-adjacent infrastructure layer** — it's not just for outbound GTM, but for the entire SaaS lifecycle (activation, retention, expansion, advocacy).
 
-## Contradictions & Open Questions
+## The Open-Source Stack (Now Named)
 
-- What open-source warehouse tools are specifically recommended? Schneider doesn't name one. Lemlist uses BigQuery (Google Cloud). Candidates for open-source: DuckDB, ClickHouse, PostgreSQL. [low confidence]
-- How does the warehouse stay in sync in real time vs. batch? Lemlist does daily batch syncs into Customer.io — real-time not required for lifecycle email.
+Schneider's May 2026 post names the specific open-source stack he recommends:
+
+**[[Airbyte]] + [[ClickHouse]]**
+
+- **Airbyte** — open-source data pipeline; extracts from all business data sources and loads into the warehouse
+- **ClickHouse** — open-source columnar database; fast for analytical SQL queries
+
+This resolves the wiki's standing open question about which open-source warehouse Schneider uses.
+
+**Setup caveat (from community):** Getting clean, reliable live business data piped correctly is a **2–3 week setup minimum** for most companies — even with Airbyte + ClickHouse. The tooling is accessible; the data hygiene and integration work is not trivial.
+
+**Implementation spectrum:**
+- Open-source: Airbyte + ClickHouse (self-managed)
+- Cloud/managed: BigQuery (Lemlist's choice)
+- Commercial: [[Graphed]] (Schneider's own product; wraps this infrastructure with a managed service)
+
+## Open Questions
+
+- How does the warehouse stay in sync in real time vs. batch? Lemlist does daily batch syncs into Customer.io — real-time not required for lifecycle email. For ad optimization, faster sync may matter more.
+
+## The SMB-Scale Variant (Well)
+
+[[sources/maximechampoux-well-ai-native-engineering]] applies this same "centralize scattered data so agents have real context" thesis to a segment this concept's other sources don't address: solopreneurs and small businesses who will never build (or afford) an Airbyte + ClickHouse warehouse or hire a data team. [[entities/well|Well]]'s [[concepts/business-context-graph]] is the SMB-scale equivalent — a unified data model built via an MCP-first, demand-driven connector waterfall rather than a formal ETL pipeline, aimed at giving AI agents (invoice retrieval, financial forecasting) the same kind of cross-domain context this concept describes at company scale.
 
 ## See Also
 
 - [[AI Marketing Stack]] — the broader infrastructure context
 - [[GTM Agents]] — the agents that query this warehouse
 - [[Behavioral Email Triggers]] — the lifecycle email system the warehouse enables internally
+- [[Airbyte]] — the open-source ingestion layer
+- [[ClickHouse]] — the open-source warehouse layer
 - [[Cody Schneider]] — identified this as the critical enabling layer for outbound GTM agents
 - [[Lemlist]] — real-world implementation: BigQuery → Customer.io → behavioral flows
-- [[sources/codyschneider-gtm-agents]] — Schneider's framework
-- [[sources/squeezeandscale-lemlist-email-nurturing]] — Lemlist's concrete implementation
+- [[concepts/business-context-graph]] — the SMB-scale variant of this same thesis
+- [[sources/codyschneider-gtm-agents]] — Schneider's original GTM agents framework
+- [[sources/codyschneider-marketing-agents-per-vertical]] — names Airbyte + ClickHouse
+- [[sources/squeezeandscale-lemlist-email-nurturing]] — Lemlist's concrete BigQuery implementation
+- [[sources/maximechampoux-well-ai-native-engineering]] — the SMB-scale variant

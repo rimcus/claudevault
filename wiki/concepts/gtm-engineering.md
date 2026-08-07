@@ -4,7 +4,7 @@ type: concept
 tags: [gtm, engineering, automation, pipelines, growth]
 created: 2026-04-14
 updated: 2026-04-14
-sources: [codyschneider-gtm-agents, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, alexvacca-gtm-engineering-hire, salescaptain-claude-code-gtm-playbook, salescaptain-linkedin-outbound-playbook]
+sources: [codyschneider-gtm-agents, codyschneider-twitter-outreach-pipeline, codyschneider-ai-ugc-ads, alexvacca-gtm-engineering-hire, salescaptain-claude-code-gtm-playbook, salescaptain-linkedin-outbound-playbook, nickabraham-claude-code-campaign-lists, codyschneider-marketing-agents-per-vertical]
 ---
 
 # GTM Engineering
@@ -81,6 +81,44 @@ Every pipeline is a loop. The data generated in step 4 informs step 1 of the nex
 **8-Step Outbound Pipeline (SalesCaptain):**
 1. Detect signals → 2. Score and tier (Python) → 3. Score fit fast (reject pre-enrichment) → 4. Find decision-makers → 5. Enrich contacts (waterfall) → 6. Generate copy → 7. Push campaign → 8. Analyse and improve
 
+## Live Operational Example: Nick Abraham's Campaign List Workflow
+
+[[Nick Abraham]] (15+ concurrent cold email campaigns) provides the most concrete operational validation of Claude Code as a GTM engine in this wiki. He uses [[Discolike]]'s MCP to connect Claude Code directly to his contact database, running the full list-management cycle weekly:
+
+1. Account search (Claude executes the query)
+2. Real-time QA — flags low-accuracy results and recommends filter changes inline
+3. Org hierarchy resolution — when the ICP title doesn't exist at a smaller company, Claude identifies who holds that responsibility and pulls them instead
+4. Industry title pattern recognition — trained to know that CRM agency founders often list as "Consultant," not "Founder"
+5. Push to Airtable, campaign-ready
+
+**Result:** 5 hours → 2 hours, with better output quality.
+
+**Key lesson:** *"Building your own MCPs/endpoints to unlock the most value is 100% where your time should be spent right now."* The LLM capability is not the ceiling — the quality of the MCP connection to underlying data is.
+
+## Agent-Per-Vertical Model (Schneider, May 2026)
+
+[[sources/codyschneider-marketing-agents-per-vertical]] extends the earlier GTM agents blueprint into a specific deployment pattern:
+
+**One agent per marketing channel:**
+- SEO agent
+- Facebook Ads agent
+- Google Ads agent
+- Cold email agent
+- Cold DM agent
+- Social media management agent
+- Email marketing agent
+
+Each agent owns its channel end-to-end: research, execution, analysis, and iteration — not just execution. The agents share a single data warehouse ([[Airbyte]] + [[ClickHouse]]) and write SQL to query it when making decisions.
+
+**The self-generating skill files loop** is the most novel element:
+1. Agent researches what the best practitioners in the world are doing right now
+2. Reads 10 articles on current best practices
+3. **Writes its own skill files** — persistent documents summarizing what it learned
+4. Improves the channel based on live data + skill file guidance
+5. Repeat
+
+This closes the loop on [[Schema-Governed LLM Behavior]]: instead of humans writing CLAUDE.md / playbook files, the agents research and write their own. Each run compounds on the previous. This is the self-generating version of the SalesCaptain 12-playbook model.
+
 ## Key Practical Constraint: The Cold Email Personalization Problem
 
 Surfaced by community (Dhruv Jain) and **confirmed by ColdIQ's empirical data**: full AI autonomy erodes pipeline quality within a quarter. Personalization feels generic, signal-to-noise degrades, strategic judgment stops happening. The [[Hybrid AI Model]] is the evidence-backed mitigation.
@@ -100,3 +138,5 @@ Surfaced by community (Dhruv Jain) and **confirmed by ColdIQ's empirical data**:
 - [[Cody Schneider]] — builder/tools perspective
 - [[Alex Vacca]] / [[ColdIQ]] — role definition + empirical data
 - [[Bill Stathopoulos]] / [[SalesCaptain]] — Claude Code implementation layer
+- [[Nick Abraham]] — live operational practitioner (15+ campaigns, weekly MCP workflow)
+- [[sources/nickabraham-claude-code-campaign-lists]] — concrete campaign list management use case
