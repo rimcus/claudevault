@@ -25,7 +25,7 @@ The minimum set of infrastructure required to run autonomous [[GTM Agents]]: an 
 |------|----------|
 | [[Apify]] | Web scraping (LinkedIn, etc.) |
 | [[Apollo]] | B2B contact enrichment, email finding |
-| [[Million Verifier]] | Email verification before sending |
+| [[entities/millionverifier|MillionVerifier]] | Email verification before sending |
 | [[Instantly]] | Cold email sending + inbox management |
 
 ### Tier 3: SEO & Content Tools

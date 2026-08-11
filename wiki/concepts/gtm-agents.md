@@ -31,7 +31,7 @@ GTM Agents represent the application of the [[LLM-Maintained Wiki]] insight to b
 
 | Domain | Agent | Key Tools |
 |--------|-------|-----------|
-| Lead Gen | LinkedIn pipeline: scrape → enrich → verify → add to campaign | [[Apify]], [[Apollo]], [[Million Verifier]], [[Instantly]] |
+| Lead Gen | LinkedIn pipeline: scrape → enrich → verify → add to campaign | [[Apify]], [[Apollo]], [[entities/millionverifier|MillionVerifier]], [[Instantly]] |
 | Paid Ads | Google Search Ads optimization | [[Ahrefs]] MCP, Search Console |
 | Paid Ads | Facebook Ads creative management | Facebook Marketing API |
 | CRM | HubSpot enrichment (hourly) | [[Exa API]], [[HubSpot]] |

@@ -4,13 +4,17 @@ type: entity
 entity_kind: tool
 tags: [tool, web-scraping, lead-gen, automation, linkedin]
 created: 2026-04-14
-updated: 2026-07-28
-sources: [codyschneider-gtm-agents, nickabraham-linkedin-inmail-pipeline, codyschneider-ad-library-gap-analysis]
+updated: 2026-08-11
+sources: [codyschneider-gtm-agents, nickabraham-linkedin-inmail-pipeline, codyschneider-ad-library-gap-analysis, codyschneider-two-agents-podcast]
 ---
 
 # Apify
 
 A web scraping and browser automation platform. Appears in three distinct pipeline roles: (1) scraping LinkedIn post engagers as a prospecting source, (2) filtering LinkedIn contact lists for recent activity before InMail sends, and (3) scraping competitor Facebook Ads Library creative.
+
+## Maestro Actors (Schneider, August 2026)
+
+[[sources/codyschneider-two-agents-podcast]] names Apify's "Maestro" actors specifically as the most stable LinkedIn scrapers currently available, and specifies the extraction target: post reactions *plus* post comments together, run daily via cron against a tracked list of 10–20 category-outlier accounts (see [[concepts/signal-infrastructure]]'s LinkedIn Sourcing Mechanics section for the full sourcing logic this feeds).
 
 ## Role in This Wiki
 
@@ -20,7 +24,7 @@ A web scraping and browser automation platform. Appears in three distinct pipeli
 
 ### GTM Agents (Schneider)
 
-LinkedIn Post URL → **Apify** (scrape engagers) → [[Apollo]] (enrich + email) → [[Million Verifier]] (verify) → [[Instantly]] (send)
+LinkedIn Post URL → **Apify** (scrape engagers) → [[Apollo]] (enrich + email) → [[entities/millionverifier|MillionVerifier]] (verify) → [[Instantly]] (send)
 
 ### LinkedIn InMail Pipeline (Abraham)
 
@@ -44,3 +48,5 @@ Active LinkedIn users (recent posts or comments) respond at significantly higher
 - [[GTM Agents]] — the workflow where the original scraping role is used
 - [[Apollo]] — next step in the Schneider engager pipeline
 - [[entities/netnut|NetNut]] — upstream step in the Abraham InMail pipeline
+- [[sources/codyschneider-two-agents-podcast]] — Maestro actors; daily-cron reactions+comments extraction
+- [[concepts/signal-infrastructure]] — the sourcing logic Apify's engager extraction feeds

@@ -8,7 +8,7 @@ updated: 2026-04-14
 
 *Content catalog. Updated on every ingest. Read this first when answering queries — find relevant pages, then drill in.*
 
-**Total pages:** 142 | **Sources ingested:** 28 | **Last updated:** 2026-08-07
+**Total pages:** 163 | **Sources ingested:** 30 | **Last updated:** 2026-08-11
 
 ---
 
@@ -44,6 +44,8 @@ One page per ingested source. Links to raw file in `raw/sources/`.
 - [[sources/codyschneider-ad-library-gap-analysis|GTM Engineering Today: Competitor Ad Library → Gap Analysis → Autonomous Ads]] — Cody Schneider post: scrape competitor Facebook Ads Library creative → Gemini describes angle/promise/outcome → Claude finds messaging gaps → Exa AI validates via Reddit → Nano Banana + Seedance generate ads → Graphed MCP + Claude Code autonomously kill losers/scale winners → deploy to server
 - [[sources/codyschneider-seo-for-saas-101|SEO for SaaS 101]] — Cody Schneider post: named-tool version of the AI Search SEO Lever 1 pipeline (Claude Code + SEO API + Serper); novel step is folding a recorded founder perspective/interview into competitor-researched articles as the durability layer once the mechanical steps commoditize
 - [[sources/codyschneider-ai-citation-loop|Half of Winning With AI Search Is Just Writing Content AI Wants to Consume]] — Cody Schneider post: PromptWatch (find prompt gaps) → DataForSEO AI Optimization API (size + live citations across 4 models) → Codex (analyze top-cited URL structure) → Claude Code (write in that shape, FAQPage/Article schema) → CMS API publish → IndexNow/Search Console; "models retrieve chunks, not pages"
+- [[sources/outboundsquad-armandfarrokh-sdr-playbook|Outbound Squad — Armand Farrokh: Building an Outbound Machine + Creative Pipeline Plays]] — Armand Farrokh (30MPC): human SDR org-building playbook — "Flip 2, Fire 2, Hire 2" turnaround, why prior SDR experience is overrated, the daily dial-blitz culture, firmographic-plus-trigger targeting, VC-fund ABM plays, executive/investor referral pipelines, event pre-booking
+- [[sources/codyschneider-two-agents-podcast|Two GTM Agents: Signal-Based Cold Outbound + Organic LinkedIn Content Engine]] — Cody Schneider post recapping a podcast appearance: an evolved cold-outbound pipeline (for-you-feed sourcing, category outliers, Origami-aggregated enrichment, inbox agent with calendar verification) plus a new organic-content agent that mines internal conversations instead of prompting an LLM; his most explicit agent-design philosophy yet
 
 ---
 
@@ -99,6 +101,15 @@ Topic and idea pages.
 - [[concepts/competitor-creative-gap-analysis|Competitor Creative Gap Analysis]] — scrape competitor ad creative, LLM-describe it, find and validate messaging gaps, generate and autonomously optimize ads inside the gap
 - [[concepts/founder-perspective-content-moat|Founder Perspective Content Moat]] — fold a recorded founder perspective/interview into otherwise mechanical, competitor-researched SEO articles; the un-synthesizable input as the durability layer
 - [[concepts/citation-shape-engineering|Citation Shape Engineering]] — reverse-engineer the structural shape of already-cited AI-search content and mechanically rewrite your own content to match it, since models retrieve chunks, not pages
+- [[concepts/sdr-org-turnaround-playbook|SDR Org Turnaround Playbook (Flip 2, Fire 2, Hire 2)]] — SDR orgs are diagnosable in ~3 weeks; right people + raised standard + minimum-viable frameworks fixes most of them
+- [[concepts/sdr-hiring-signal|SDR Hiring Signal]] — prior SDR experience is overrated; a 3-round funnel (screen for proactivity, two-pass mock call for coachability, on-site super round) screens for what actually predicts success
+- [[concepts/sdr-culture-building|SDR Culture Building (Dial Blitz + Public Recognition)]] — daily synchronized team cold-calling + real-time public meeting recognition; replaces prospecting isolation with camaraderie
+- [[concepts/outbound-targeting-triggers|Outbound Targeting via Firmographics + Triggers]] — firmographic fit alone produces false positives; trigger events isolate the 10-15% in a live buying window; "shuttle runs" teach account research in isolation
+- [[concepts/abm-account-based-pipeline-plays|ABM Account-Based Pipeline Plays]] — synchronized SDR + marketing display ads + physical mail on a tight account list; ~10-20% breakthrough rate
+- [[concepts/executive-referral-pipeline|Executive & Investor Referral Pipeline]] — pre-packaged VC portfolio-ops referral asks; internal "Exec Shark Tank Week" ghostwriting intro messages for executives to send
+- [[concepts/event-pipeline-pre-booking|Event Pipeline Pre-Booking & Floor Hunting]] — pipeline value captured before the event via pre-booked meetings, not passive booth staffing; badge-list-to-ChatGPT floor targeting
+- [[concepts/agent-architecture-principles|Agent Architecture Principles]] — agent = code + thinking loop + live data stream; don't pay tokens for what cheap CPU does; agent frameworks are usually bloat for finite problems; model the human's real process
+- [[concepts/organic-content-agent-loop|Organic Content Agent Loop]] — mine LinkedIn content from internal conversations (sales calls, Slack, interviews, Gong) instead of prompting an LLM; Ordinal schedules + feeds analytics back for snowball/remix decisions; repost winners every 90 days
 
 ---
 
@@ -107,6 +118,8 @@ Topic and idea pages.
 People, tools, organizations.
 
 ### People
+- [[entities/armand-farrokh|Armand Farrokh]] — co-founder of 30MPC; former Head/VP of Sales at Pave; former Director of SDR at Carta
+- [[entities/jason-bay|Jason Bay]] — host of Outbound Squad podcast; CEO of Outbound Squad
 - [[entities/maxime-champoux|Maxime Champoux]] — CEO/co-founder of Well; former Head of Products at Qonto; architect of its 7→100+ features/month AI-coding transition
 - [[entities/alex-olivet|Alex Olivet]] — host of SaaS Connection; founder of Collect
 - [[entities/luke-harries|Luke Harries]] — Head of Growth at ElevenLabs; architect of its sharded growth team, launch playbook, and no-PM product-engineer model
@@ -120,6 +133,10 @@ People, tools, organizations.
 - [[entities/bill-stathopoulos|Bill Stathopoulos]] — CEO & co-founder of SalesCaptain; author of Claude Code for GTM and LinkedIn Outbound playbooks
 
 ### Organizations
+- [[entities/30mpc|30 Minutes to President's Club (30MPC)]] — sales media/training company co-founded by Armand Farrokh; short-format sales content
+- [[entities/carta|Carta]] — cap-table management fintech; site of Farrokh's SDR turnaround, targeting, and VC-ABM stories
+- [[entities/pave|Pave]] — compensation-benchmarking startup; Farrokh's Head/VP of Sales role, $0→$13M ARR
+- [[entities/greg-isenberg|Greg Isenberg]] — podcast host; interviewed Cody Schneider
 - [[entities/coldiq|ColdIQ]] — GTM agency, $7M+ ARR, 400+ B2B clients, 23M+ emails; the data source behind Vacca's claims
 - [[entities/salescaptain|SalesCaptain]] — GTM agency; $1M+ LinkedIn pipeline, 79% ICP fit; implementation-focused (Claude Code + LinkedIn workflows)
 - [[entities/elevenlabs|ElevenLabs]] — AI audio company, $3.3B valuation; horizontal multi-product strategy; case study for sharded growth teams and no-PM org design; also used as a third-party TTS tool in Schneider's podcast pipeline
@@ -174,6 +191,10 @@ People, tools, organizations.
 - [[entities/dataforseo|DataForSEO]] — AI Optimization API; search volume, mention counts, and live LLM citation data across 4 models
 - [[entities/codex|Codex]] — OpenAI's coding agent; fetches and structurally analyzes top-cited URLs (first non-Claude coding agent in this wiki)
 - [[entities/indexnow|IndexNow]] — instant-indexing protocol/API
+- [[entities/origami|Origami]] — enrichment waterfall aggregator; exposes an entire provider cascade behind one API call
+- [[entities/millionverifier|MillionVerifier]] — pre-send email validation tool; previously only a dangling link, now a full entity page
+- [[entities/ordinal|Ordinal]] — LinkedIn content scheduler; posts across multiple accounts and streams analytics back to the agent
+- [[entities/gong|Gong]] — sales-call recording/transcription platform; source material for the organic content agent
 
 ---
 

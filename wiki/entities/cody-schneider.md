@@ -4,8 +4,8 @@ type: entity
 entity_kind: person
 tags: [person, gtm, marketing, ai-agents, growth]
 created: 2026-04-14
-updated: 2026-08-07
-sources: [codyschneider-gtm-agents, codyschneider-ai-media-company-playbook, codyschneider-ad-library-gap-analysis, codyschneider-seo-for-saas-101, codyschneider-ai-citation-loop]
+updated: 2026-08-11
+sources: [codyschneider-gtm-agents, codyschneider-ai-media-company-playbook, codyschneider-ad-library-gap-analysis, codyschneider-seo-for-saas-101, codyschneider-ai-citation-loop, codyschneider-two-agents-podcast]
 ---
 
 # Cody Schneider
@@ -24,6 +24,7 @@ Source of the concrete [[GTM Agents]] implementation stack — the most actionab
 - Published [[concepts/competitor-creative-gap-analysis|competitor creative gap analysis]] (July 2026) — scrape competitor Facebook Ads Library creative, use an LLM to map category messaging, find and validate a gap, then generate and autonomously optimize ads inside it
 - Published [[concepts/founder-perspective-content-moat|SEO for SaaS 101]] (July 2026) — a named-tool SEO agent spec (Claude Code + SEO API + Serper) whose one novel step is folding a recorded founder perspective into otherwise mechanical, competitor-research-based articles
 - Published [[concepts/citation-shape-engineering|the AI citation loop]] (August 2026) — reverse-engineer the structural shape of already-cited content (PromptWatch + DataForSEO + Codex), then mechanically rewrite and publish content in that shape at scale via a coding agent; a structural alternative to citation acquisition by outreach, and in unreconciled tension with his own founder-perspective post 10 days earlier
+- Published [[sources/codyschneider-two-agents-podcast|a recap of his appearance on Greg Isenberg's podcast]] (August 2026) — two full agent systems: an evolved version of the original cold-outbound pipeline (LinkedIn engager sourcing via for-you feed and category outliers, Origami-aggregated enrichment, an inbox agent with calendar verification), and a new organic-content agent ([[concepts/organic-content-agent-loop]]) that mines internal conversations instead of prompting an LLM from scratch; also his most explicit statement of an agent-design philosophy ([[concepts/agent-architecture-principles]])
 
 ## Positions / Claims
 
@@ -36,6 +37,10 @@ Source of the concrete [[GTM Agents]] implementation stack — the most actionab
 | Competitor ad libraries can be mined mechanically (LLM-described creative → gap analysis → Reddit validation) to find unclaimed market positioning, then deployed as a self-optimizing, server-run ads agent | [[sources/codyschneider-ad-library-gap-analysis]] | 2026-07-28 |
 | A recorded founder perspective, folded into otherwise research-scraped SEO articles, is what survives once the mechanical parts of the SEO playbook are commoditized | [[sources/codyschneider-seo-for-saas-101]] | 2026-07-27 |
 | AI-search citation is a structural property of content ("models retrieve chunks, not pages"), earnable by reverse-engineering and matching the shape of already-cited pages, not by buying placement or writing better prose | [[sources/codyschneider-ai-citation-loop]] | 2026-08-06 |
+| An agent is code + a thinking loop + a live data stream; agent frameworks are usually bloat for finite problems; don't pay tokens for what cheap CPU already does | [[sources/codyschneider-two-agents-podcast]] | 2026-08-10 |
+| The best LinkedIn content is already trapped in internal conversations (sales calls, Slack, interviews) — extract it, don't prompt an LLM to invent it | [[sources/codyschneider-two-agents-podcast]] | 2026-08-10 |
+
+**Note on internal consistency:** the "agent frameworks are usually bloat" claim above sits in unreconciled tension with his own April 2026 recommendation of [[entities/hermes-agent|Hermes Agent]] as the GTM agent runtime ([[sources/codyschneider-gtm-agents]]) — see [[concepts/agent-architecture-principles]] for the fuller note. Consistent with this wiki's existing pattern of flagging (not silently resolving) tensions between his own posts, alongside the founder-perspective/citation-shape tension already logged on this page.
 
 ## See Also
 
@@ -44,6 +49,9 @@ Source of the concrete [[GTM Agents]] implementation stack — the most actionab
 - [[sources/codyschneider-ad-library-gap-analysis]] — the competitor creative gap analysis pipeline
 - [[sources/codyschneider-seo-for-saas-101]] — the SEO for SaaS 101 / founder-perspective post
 - [[sources/codyschneider-ai-citation-loop]] — the AI citation loop / citation shape engineering post
+- [[sources/codyschneider-two-agents-podcast]] — the two-agent podcast recap (cold outbound evolution + organic content engine)
+- [[concepts/agent-architecture-principles]] — his agent-design philosophy, in tension with his own earlier framework pick
+- [[concepts/organic-content-agent-loop]] — the organic LinkedIn content system
 - [[GTM Agents]] — the concept he implements
 - [[concepts/ai-media-company-playbook]] — owned-media extension of the GTM agents thesis
 - [[concepts/competitor-creative-gap-analysis]] — competitor-intelligence extension of the ads pipeline

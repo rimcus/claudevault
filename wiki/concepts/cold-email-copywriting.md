@@ -231,3 +231,4 @@ Once a positive reply arrives, a personalized Loom video converts reply to booke
 - [[Signal Infrastructure]] — the openers map directly to signal types (trigger events = LinkedIn/funding signals)
 - [[sources/alexvacca-gtm-engineering-hire]] — empirical: "targeting quality is the #1 predictor of reply rate"
 - [[sources/salescaptain-linkedin-outbound-playbook]] — LinkedIn DM equivalent (8 principles from 120K+ messages)
+- [[concepts/outbound-targeting-triggers]] — parallel personalization-at-scale mechanic from human SDR practice: rank triggers, pre-build one template per trigger, swap in ~10 seconds instead of freeform personalization

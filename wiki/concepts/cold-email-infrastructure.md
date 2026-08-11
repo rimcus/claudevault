@@ -3,8 +3,8 @@ title: "Cold Email Infrastructure"
 type: concept
 tags: [cold-email, outbound, deliverability, domains, inboxes, scaling, infrastructure]
 created: 2026-04-15
-updated: 2026-04-15
-sources: [anon-cold-email-systems-guide]
+updated: 2026-08-11
+sources: [anon-cold-email-systems-guide, codyschneider-two-agents-podcast]
 ---
 
 # Cold Email Infrastructure
@@ -45,6 +45,21 @@ The single most important rule in cold email infrastructure.
 
 This linear model makes the financial architecture predictable: volume scales with infrastructure spend, not with risk. It also means the economics of running cold email as a service are fundamentally about managing domain/inbox costs vs. per-call revenue.
 
+## Four Domain Buckets (Schneider, August 2026)
+
+[[sources/codyschneider-two-agents-podcast]] gives a fuller domain taxonomy than the cold-vs-core-domain binary above. Businesses running GTM agents typically end up managing four distinct domain buckets, each serving a different risk/reputation role:
+
+| Bucket | Purpose | Deliverability risk if compromised |
+|--------|---------|-------------------------------------|
+| Cold | Sacrificial outreach domains (this page's "outreach-specific domains") | Low — retire and replace |
+| Marketing | Newsletter/nurture sends, opted-in audiences | Medium |
+| Transactional | Receipts, password resets, product notifications | High — must stay clean, users expect delivery |
+| Business | The core company domain | Highest — a blacklist here affects all company communication |
+
+**Burner domains** (the cold bucket) exist specifically to absorb deliverability damage so it never reaches the business bucket. This is the same principle the "Domains" section above already establishes, formalized into four named categories rather than a single cold/core split.
+
+**Cost anchor:** roughly $200/month in total infrastructure spend to start sending at 10k volume — the practical price of running the domain/inbox/warm-up architecture described on this page at a starting scale.
+
 ## Deliverability Rules (Copy Layer)
 
 Infrastructure alone is not sufficient. The copy must also be deliverability-safe:
@@ -73,3 +88,5 @@ The speed limit constraint also explains why serious cold email operators look l
 - [[Cold Email Personalization Problem]] — a higher-order problem that assumes the infrastructure is already correct
 - [[GTM Engineering]] — cold email infrastructure as one implementation of GTM engineering
 - [[sources/alexvacca-gtm-engineering-hire]] — empirical scale context: ColdIQ uses 4 ESPs simultaneously, dozens of domains
+- [[sources/codyschneider-two-agents-podcast]] — four-domain-bucket taxonomy; ~$200/month cost anchor
+- [[Enrichment Waterfall]] — the enrichment spend that sits alongside this infrastructure cost

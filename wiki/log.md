@@ -14,6 +14,63 @@ grep "^## \[" wiki/log.md | head -10
 
 ---
 
+## [2026-08-11] ingest | Cody Schneider — Two GTM Agents: Signal-Based Cold Outbound + Organic LinkedIn Content Engine
+
+- Summary page: [[sources/codyschneider-two-agents-podcast]]
+- Raw source: `raw/sources/Post by @codyschneider on X 8.md`
+- Pages created:
+  - [[sources/codyschneider-two-agents-podcast]]
+  - [[concepts/agent-architecture-principles]]
+  - [[concepts/organic-content-agent-loop]]
+  - [[entities/origami]]
+  - [[entities/millionverifier]]
+  - [[entities/ordinal]]
+  - [[entities/greg-isenberg]]
+  - [[entities/gong]]
+- Pages updated:
+  - [[concepts/signal-infrastructure]] (added LinkedIn sourcing mechanics: for-you feed, category outliers, business accounts, reactions+comments engager extraction, daily cron, ICP-fit-before-enrichment ordering)
+  - [[concepts/enrichment-waterfall]] (added Origami aggregator, MillionVerifier validation, broker-data compliance note, $200/month cost anchor)
+  - [[concepts/cold-email-infrastructure]] (added four-domain-bucket taxonomy: cold/marketing/transactional/business)
+  - [[concepts/hybrid-ai-model]] (added the code/LLM-boundary restatement of the automate/judgment split: "don't pay tokens for what cheap CPU does")
+  - [[concepts/content-outbound-flywheel]], [[concepts/founder-perspective-content-moat]] (cross-referenced organic-content-agent-loop)
+  - [[entities/apify]] (Maestro actors, reactions+comments extraction detail)
+  - [[entities/instantly]] (webhooks → inbox agent, six-month re-touch, calendar verification)
+  - [[entities/leadmagic]] (mobile-phone-specific enrichment role)
+  - [[entities/hermes-agent]] (logged tension with the new "agent frameworks are bloat" claim)
+  - [[entities/cody-schneider]] (added new post, positions, and the framework-tension note)
+  - Fixed dangling `[[Million Verifier]]` wikilinks across [[concepts/ai-marketing-stack]], [[concepts/gtm-agents]], [[entities/apify]], [[entities/apollo]], [[sources/codyschneider-gtm-agents]] to point at the new [[entities/millionverifier]] page
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: This post is an evolved, more-automated restatement of Schneider's original April cold-outbound pipeline plus a genuinely new second system — an organic LinkedIn content agent built on "extract from real conversations, don't generate from a blank prompt," the same underlying claim as [[concepts/founder-perspective-content-moat]] applied to a new domain. Its most novel contribution is [[concepts/agent-architecture-principles]] — Schneider's most explicit statement yet of how to build finite-problem agents (code + thinking loop + data stream; don't spend tokens on what cheap CPU can do; frameworks are usually bloat) — which sits in genuine, unreconciled tension with his own April recommendation of [[entities/hermes-agent|Hermes Agent]] as the GTM runtime framework. Logged as an open tension rather than silently resolved, consistent with how this wiki already handles his founder-perspective/citation-shape contradiction.
+
+---
+
+## [2026-08-10] ingest | Outbound Squad — Armand Farrokh: Building an Outbound Machine + Creative Pipeline Plays
+
+- Summary page: [[sources/outboundsquad-armandfarrokh-sdr-playbook]]
+- Raw source: pasted transcript (podcast, no file saved to raw/sources/ — ingested directly from chat)
+- Pages created:
+  - [[sources/outboundsquad-armandfarrokh-sdr-playbook]]
+  - [[concepts/sdr-org-turnaround-playbook]]
+  - [[concepts/sdr-hiring-signal]]
+  - [[concepts/sdr-culture-building]]
+  - [[concepts/outbound-targeting-triggers]]
+  - [[concepts/abm-account-based-pipeline-plays]]
+  - [[concepts/executive-referral-pipeline]]
+  - [[concepts/event-pipeline-pre-booking]]
+  - [[entities/armand-farrokh]]
+  - [[entities/jason-bay]]
+  - [[entities/30mpc]]
+  - [[entities/carta]]
+  - [[entities/pave]]
+- Pages updated:
+  - [[concepts/hybrid-ai-model]] (added third independent confirmation: Farrokh's AI-sales-coach critique matches the automate-volume/keep-humans-on-judgment split, from human SDR leadership rather than a GTM agency)
+  - [[concepts/icp-avatar]] (added the pre-AI, human-SDR version: firmographics-plus-triggers as the manual equivalent of machine-sortable ICP filtering)
+  - [[concepts/cold-email-copywriting]] (cross-referenced the ranked-trigger-template personalization mechanic as a parallel to ACV-based segmentation)
+  - [[wiki/index.md]], [[wiki/log.md]], [[wiki/overview.md]]
+- Key takeaway: This source returns to the wiki's original B2B outbound/SDR core, but from a human-organization-building angle almost entirely independent of AI tooling — a useful pre-AI-era baseline against the wiki's increasingly AI-native sources. Its most reusable material: a complete, sequenced SDR-leadership playbook (turnaround → hiring → daily culture → targeting discipline → creative pipeline plays beyond cold call/cold email) from an operator who's run it twice (Carta, Pave) with concrete outcomes attached. Two direct convergences with existing wiki concepts were strong enough to fold into those pages rather than only cross-reference: Farrokh's AI-sales-coach critique is a third independent voice (after ColdIQ and SalesCaptain) confirming [[concepts/hybrid-ai-model]]'s automate-volume/keep-humans-on-judgment split, and his firmographic-plus-trigger "stale cap table" targeting logic is the pre-automation version of [[concepts/icp-avatar]]'s "generic ICPs produce generic outreach" principle.
+
+---
+
 ## [2026-08-07] ingest | Cody Schneider — AI Citation Loop / Citation Shape Engineering (X post)
 
 - Summary page: [[sources/codyschneider-ai-citation-loop]]

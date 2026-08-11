@@ -78,12 +78,18 @@ In [[SalesCaptain]]'s implementation, the ICP Avatar is stored as a playbook fil
 
 The ICP Avatar is one of [[Stathopoulos]]'s explicit "keep human" items: ICP definition belongs in the hybrid column (AI drafts, human approves) — not the automate column. The human judgment about which quotes are representative is load-bearing.
 
+## The Pre-AI, Human-SDR Version (Farrokh, August 2026)
+
+[[sources/outboundsquad-armandfarrokh-sdr-playbook]] documents the same "a technically-matching account can still be the wrong target" principle from a human SDR-leadership angle, independent of any AI tooling. [[entities/armand-farrokh|Armand Farrokh]]'s "stale cap table" example at [[entities/carta|Carta]]: an account can pass every firmographic ICP filter (Series A-F, 50-500 employees) and still be a dead end without an active trigger event (funding recency, growth rate, a stage-linked compliance window) — see [[concepts/outbound-targeting-triggers]]. Where this concept's "machine-sortable ICP" makes firmographic filtering precise enough for an AI/enrichment tool to run at scale, Farrokh's version is the same filtering discipline applied manually by a rep, using triggers instead of (or alongside) firmographics as the qualifying layer. Worth reading as the pre-automation version of the same underlying insight: firmographic fit alone is vibes, not a buying signal.
+
 ## See Also
 
 - [[sources/salescaptain-claude-code-gtm-playbook]] — primary source (outbound copy application)
 - [[sources/codyschneider-transcript-personas]] — advertising application; 4-part persona definition; transcript mining; ad structure (hook/body/belief)
+- [[sources/outboundsquad-armandfarrokh-sdr-playbook]] — pre-AI, human-SDR version: firmographics-plus-triggers as the manual equivalent of machine-sortable ICP filtering
 - [[Bill Stathopoulos]] — originator
 - [[Hybrid AI Model]] — ICP definition is the "hybrid" category (AI drafts, human approves)
 - [[Cold Email Personalization Problem]] — ICP Avatar is the upstream fix for generic AI copy
 - [[Schema-Governed LLM Behavior]] — the ICP Avatar is stored as a playbook Claude reads at runtime
 - [[AI UGC Ads]] — the ad creative pipeline personas feed into
+- [[concepts/outbound-targeting-triggers]] — the human-SDR-side parallel concept

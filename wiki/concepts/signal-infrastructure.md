@@ -3,8 +3,8 @@ title: "Signal Infrastructure"
 type: concept
 tags: [gtm, data, signals, intent, infrastructure, targeting]
 created: 2026-04-14
-updated: 2026-04-14
-sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook, codyschneider-andromeda-b2b-facebook, codyschneider-tam-mapping]
+updated: 2026-08-11
+sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook, codyschneider-andromeda-b2b-facebook, codyschneider-tam-mapping, codyschneider-two-agents-podcast]
 ---
 
 # Signal Infrastructure
@@ -92,6 +92,20 @@ The pattern mirrors the broader signal logic:
 
 All three are signal types. The [[LinkedIn InMail Pipeline]] uses all three together.
 
+## LinkedIn Sourcing Mechanics: Feed, Outliers, Engagers (Schneider, August 2026)
+
+[[sources/codyschneider-two-agents-podcast]] adds a fourth context: not filtering an existing list (Abraham, above) or classifying account-level intent (Vacca, TAM), but the mechanics of *building the initial engager list itself* for a cold-outbound agent.
+
+- **Engagement beats firmographics as a hand-raise signal.** LinkedIn reactions/comments outrank firmographic fit as the primary targeting criterion.
+- **Track 10–20 category outliers for ~80% coverage.** Rather than tracking every account in a category, a small set of outlier creators/accounts captures most of the category's engagement activity.
+- **Source from the For You feed, not search.** LinkedIn's algorithmic feed surfaces what's actually resonating right now; search surfaces stale, generic results.
+- **Business accounts work as sources too** — not just individual profiles.
+- **The full engager list requires both reactions and comments** — either alone under-counts.
+- **A daily cron job** pulls net-new posts from tracked accounts, then extracts engagers from each — the automation cadence that keeps the list current without manual re-pulling.
+- **ICP-fit research happens before enrichment, not after.** This ordering rule saves enrichment spend (see [[Enrichment Waterfall]]) on people who wouldn't qualify regardless of contact data quality.
+
+This sits upstream of everything else in this section: it's the mechanism that generates the initial list before any TAM tiering, activity filtering, or signal routing happens to it.
+
 ## Signal Infrastructure for Paid Ads: The Andromeda Layer
 
 [[sources/codyschneider-andromeda-b2b-facebook]] extends signal infrastructure into the Facebook ads context. Meta's Andromeda algorithm treats your conversion data as the signal layer — the same "no garbage in, no garbage out" principle that governs GTM agent data warehouses applies to ad platforms:
@@ -113,6 +127,8 @@ Signal infrastructure is what makes "the list" actually strategic. A static list
 - [[sources/codyschneider-andromeda-b2b-facebook]] — paid ads signal layer: clean pixel + CAPI + real conversion events
 - [[sources/nickabraham-linkedin-inmail-pipeline]] — LinkedIn activity as a contact-level behavioral signal; open-profile status as channel-routing signal
 - [[sources/codyschneider-tam-mapping]] — TAM map as prerequisite; signals are noise without a base map
+- [[sources/codyschneider-two-agents-podcast]] — LinkedIn engager-list sourcing mechanics: for-you feed, category outliers, business accounts, daily cron
+- [[concepts/agent-architecture-principles]] — the design philosophy behind the daily-cron automation described above
 - [[TAM Mapping]] — the foundational layer that signals run on top of
 - [[concepts/linkedin-inmail-pipeline|LinkedIn InMail Pipeline]] — applies all three signal types (account, contact, platform) in one channel pipeline
 - [[GTM Engineering]] — the practice signal infrastructure enables

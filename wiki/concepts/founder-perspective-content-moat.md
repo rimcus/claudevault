@@ -58,3 +58,4 @@ This connects two things already in the wiki that hadn't been connected before: 
 - [[sources/codyschneider-transcript-personas]] — the wiki's other interview/transcript-mining technique, applied to ad personas rather than SEO content
 - [[concepts/citation-shape-engineering]] — unreconciled tension: a later, purely mechanical citation pipeline from the same author with no perspective step
 - [[entities/serper]] — the SERP-scraping tool in this pipeline
+- [[concepts/organic-content-agent-loop]] — the same "extract real, un-synthesizable material rather than generate it" claim, generalized from founder-recorded SEO perspective to any internal conversation, applied to LinkedIn content instead of articles

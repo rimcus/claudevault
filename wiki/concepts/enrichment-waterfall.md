@@ -3,8 +3,8 @@ title: "Enrichment Waterfall"
 type: concept
 tags: [gtm, data, enrichment, targeting, clay]
 created: 2026-04-14
-updated: 2026-04-14
-sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook, codyschneider-email-generation-agent, codyschneider-tam-mapping]
+updated: 2026-08-11
+sources: [alexvacca-gtm-engineering-hire, salescaptain-linkedin-outbound-playbook, codyschneider-email-generation-agent, codyschneider-tam-mapping, codyschneider-two-agents-podcast]
 ---
 
 # Enrichment Waterfall
@@ -68,6 +68,21 @@ Schneider also names a parallel enrichment track within TAM building: **AI resea
 
 The validation step is distinct from enrichment: ZeroBounce doesn't find emails, it removes bad ones. Both steps are required for clean deliverability.
 
+## Aggregated Waterfalls: One Call Instead of a Manual Chain (Schneider, August 2026)
+
+[[sources/codyschneider-two-agents-podcast]] introduces [[entities/origami|Origami]], an aggregator that sits in front of the waterfall pattern and exposes the entire cascade behind a single API call — the agent doesn't manually chain provider A → provider B → provider C; it calls Origami once and Origami handles the routing internally. This is a productization of the waterfall pattern itself, not a new provider in the chain.
+
+The same post adds two more specifics to the existing waterfall:
+
+- **[[LeadMagic]] named specifically for mobile phone number enrichment** — a narrower role than its general firmographic/contact use elsewhere in the wiki (see [[sources/codyschneider-tam-mapping]]).
+- **[[entities/millionverifier|MillionVerifier]]** as the validation step immediately before sending — functionally the same role [[ZeroBounce]] plays in the SalesCaptain waterfall, confirming validation-before-send is a consistent requirement across every enrichment stack in this wiki, regardless of which specific provider does it.
+
+**Sequencing rule:** ICP-fit research should happen *before* enrichment, not after — spend enrichment budget only on prospects that already pass qualification. See [[Signal Infrastructure]]'s LinkedIn Sourcing Mechanics section for the fuller context this rule comes from.
+
+**Compliance note (new, previously unaddressed in this wiki):** buying broker contact data is legal, but usage rules differ — Schneider flags this without resolving it further. No enrichment page in this wiki previously addressed legal/compliance boundaries around purchased contact data; this is the first mention.
+
+**Cost anchor:** roughly $200/month in total infrastructure spend (domains, inboxes, tooling) to start sending at 10k volume — see [[Cold Email Infrastructure]] for the domain/inbox side of that figure.
+
 ## Zero-Cost Alternative: Generate + Verify
 
 [[Cody Schneider]] describes a zero-cost alternative to the paid first-pass: generate every plausible email pattern for a person + domain (given a LinkedIn profile), then existence-check via a cheap API (e.g., mailtester.ninja) and validate with a deliverability tool (MillionVerifier).
@@ -93,3 +108,7 @@ The validation step is distinct from enrichment: ZeroBounce doesn't find emails,
 - [[sources/alexvacca-gtm-engineering-hire]] — Vacca's framework (8–12 data points)
 - [[sources/salescaptain-linkedin-outbound-playbook]] — SalesCaptain's waterfall with coverage numbers
 - [[sources/codyschneider-email-generation-agent]] — generate + verify as zero-cost alternative
+- [[sources/codyschneider-two-agents-podcast]] — Origami aggregator, ICP-fit-before-enrichment ordering, broker-data compliance note
+- [[entities/origami|Origami]] — waterfall aggregator, single-call abstraction
+- [[entities/millionverifier|MillionVerifier]] — pre-send validation step
+- [[Cold Email Infrastructure]] — the ~$200/month infrastructure cost this waterfall's spend sits alongside

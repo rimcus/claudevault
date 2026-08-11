@@ -31,7 +31,7 @@ Go-to-market work (lead gen, ads, SEO, email) can be fully delegated to autonomo
 
 | # | Agent | What It Does | Tools Used |
 |---|-------|-------------|------------|
-| 1 | LinkedIn Lead Pipeline | Scrape post engagers → enrich with emails → verify → add to cold email campaign. Manages inbox responses. | [[Apify]], [[Apollo]], [[Million Verifier]], [[Instantly]] |
+| 1 | LinkedIn Lead Pipeline | Scrape post engagers → enrich with emails → verify → add to cold email campaign. Manages inbox responses. | [[Apify]], [[Apollo]], [[entities/millionverifier|MillionVerifier]], [[Instantly]] |
 | 2 | Google Search Ads | Optimizes campaigns based on conversion data in the warehouse | [[Ahrefs]] MCP, Google Search Console |
 | 3 | Facebook Ads | Manages budget, turns off/promotes creative based on outcomes | Facebook Marketing API |
 | 4 | HubSpot CRM Enrichment | Every hour: finds new contacts, enriches with everything findable about person + company | [[Exa API]], [[HubSpot]] |
@@ -55,7 +55,7 @@ Go-to-market work (lead gen, ads, SEO, email) can be fully delegated to autonomo
 - [[OpenRouter]] — LLM API gateway providing MiniMax 2.7 access
 - [[Apify]] — web scraping platform
 - [[Apollo]] — B2B contact enrichment / email finding
-- [[Million Verifier]] — email verification tool
+- [[entities/millionverifier|MillionVerifier]] — email verification tool
 - [[Instantly]] — cold email platform
 - [[Ahrefs]] — SEO tool with MCP integration
 - [[HubSpot]] — CRM

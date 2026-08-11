@@ -14,11 +14,11 @@ A B2B sales intelligence and contact enrichment platform. Finds professional ema
 
 ## Pipeline Position
 
-[[Apify]] (scrape) → **Apollo** (enrich + email) → [[Million Verifier]] (verify) → [[Instantly]] (send)
+[[Apify]] (scrape) → **Apollo** (enrich + email) → [[entities/millionverifier|MillionVerifier]] (verify) → [[Instantly]] (send)
 
 ## See Also
 
 - [[GTM Agents]] — the workflow context
 - [[AI Marketing Stack]] — the broader stack
 - [[Apify]] — feeds into Apollo
-- [[Million Verifier]] — Apollo's output is verified here
+- [[entities/millionverifier|MillionVerifier]] — Apollo's output is verified here
